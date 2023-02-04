@@ -28,6 +28,7 @@ FRONT SIDE MOUSE BUTTON:
 (Mapped to alt via in-game hotkeys)
 Can use for pinging (map and hero is missing), changing map hero icons, seeing creep boxes/tower radius (or can use Z for those, may be more comfortable)
 Hold front mouse button to self-cast items and abilities (faster than double-tapping)
+Hold front mouse button and hit an ability to auto-cast it (if it can be autocast)
 
 
 UNIT HOTKEYS:
