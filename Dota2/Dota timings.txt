@@ -1,0 +1,29 @@
+Stacking times:
+X:55 always works
+
+Double stacking:
+X:53 and X:55 always works if you do bigger camp then smaller camp
+Works for both sides small/big camps and ancients
+Works for Dire triangle (with either set)
+Doesn't work for radiant triangle normally
+
+
+Pulling:
+Simplest ones:
+Small camp for Safe lane - X:17 and X:47
+Large camp for Offlane - X:16 and X:46
+
+
+
+For practice:
+-startgame
+-item dagon_5
+-spawnneutrals
+-teleport
+-item blink
+-item philosophers_stone
+Console: dota_range_display 500
+
+-wtf
+
+-unwtf
