@@ -85,12 +85,9 @@ return
 ;;;;;; Make 4 send shift. This is useful for queueing attack move commands, such as when making summons go push out a lane
 *4::Shift
 
-;;;;;; Make Alt function as Ctrl for Ctrl-clicking to select multiple units and subgroup order modifier key only
+;;;;;; Make Alt function as Ctrl for Ctrl-clicking to select multiple units only
 !LButton::
 Send ^{LButton}
-return
-!RButton::
-Send ^{RButton}
 return
 
 ;;;;;; Alias windows key to Alt
@@ -119,3 +116,14 @@ z::Left
 ;;;;;; Note that my Logitech GHub binds it to Right, that's why Right is used here
 ;;;;;; A different key may be needed depending on your mouse settings
 Right::Ctrl
+
+
+
+
+
+;;;;NO LONGER USED
+;Make alt function as ctrl for subgroup order modifier key
+;No longer use, since it can make spamming right click and items sometimes use the item with ctrl (which will high five if in first slot)
+;!RButton::
+;Send ^{RButton}
+;return
