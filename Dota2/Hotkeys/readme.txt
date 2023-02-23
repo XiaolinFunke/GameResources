@@ -8,10 +8,12 @@ HOW TO SET UP HOTKEYS
 		-In Red:
 			Some keys are triggered through the Autohotkey script, so the keys you will be *actually* hitting are annotated in red next to the keys dota thinks you are hitting. This annotation is purely informational; for the purposes of setting up your hotkeys, you can ignore the red text and just enter the hotkey as it appears in the white text
 		-In Purple:
-			Some of my mouse buttons are remapped using my Logitech software. Since your mouse software probably isn't set up the same way, I have annotated in purple what the *actual* hotkey is. So, your white hotkey text may need to look different than mine in order to map your mouse buttons correctly. If instead  you want to just use the same mouse mapping I use in whatever mouse software you have (this will mean you won't have to modify the .ahk script at all), it's set up like this:
+			Some of my mouse buttons are remapped using my Logitech software. Since your mouse software probably isn't set up the same way, I have annotated in purple what the *actual* hotkey you will hit is and crossed out the white one that dota shows, since, if your mouse software is set up differently, your white text will look different than mine. If you want to just use the same mouse mapping I use in whatever mouse software you have (this will mean you won't have to modify the .ahk script at all), it's set up like this:
 			Left Side Mouse Button: LEFT arrow key
 			Right Side Mouse Button: RIGHT arrow key
 			DPI button: 0  (and does not change the DPI)
+		-In Pink:
+			Optional settings that I do not use, but new players may want
 3. If your mouse software options are NOT the same as mine, as detailed above in step 2, you will need to modify the .ahk script slightly. Open the script and Replace every instance of "Left" and "Right" with the keys your mouse actually sends when hitting your front side mouse button and back side mouse button, respectively
 
 
