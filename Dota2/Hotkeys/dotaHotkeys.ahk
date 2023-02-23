@@ -85,11 +85,6 @@ return
 ;;;;;; Make 4 send shift. This is useful for queueing attack move commands, such as when making summons go push out a lane
 *4::Shift
 
-;;;;;; Make Alt function as Ctrl for Ctrl-clicking to select multiple units only
-!LButton::
-Send ^{LButton}
-return
-
 ;;;;;; Alias windows key to Alt
 ;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Alt
 LWin::LAlt
@@ -126,4 +121,9 @@ Right::Ctrl
 ;No longer use, since it can make spamming right click and items sometimes use the item with ctrl (which will high five if in first slot)
 ;!RButton::
 ;Send ^{RButton}
+;return
+;No longer use, since it can make spamming left click and items sometimes use the item with ctrl (which will high five if in first slot)
+;;;;;; Make Alt function as Ctrl for Ctrl-clicking to select multiple units only
+;!LButton::
+;Send ^{LButton}
 ;return
