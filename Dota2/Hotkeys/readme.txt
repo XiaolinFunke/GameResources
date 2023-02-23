@@ -15,7 +15,18 @@ HOW TO SET UP HOTKEYS
 3. If your mouse software options are NOT the same as mine, as detailed above in step 2, you will need to modify the .ahk script slightly. Open the script and Replace every instance of "Left" and "Right" with the keys your mouse actually sends when hitting your front side mouse button and back side mouse button, respectively
 
 
-
+OPTIONS BRYAN CHANGES FOR SPECIFIC HEROES:
+The options in the screenshots are the settings I use in general, but there are some that I change for certain heroes only. Those are noted here. Any changes here that fall under 'Unit Specific Hotkeys' will only have to be changed once and can be kept, since they don't affect other heroes, but unfortunately, any other options changes will have to be manually changed when playing the hero and then changed back afterward:
+Tinker: 
+	-Check 'enable Quickcast' under 'ITEMS' in Basic Hotkeys
+	-Also, enable quickcast for Tinker's spells under his 'Unit Specific Hotkeys'
+		-This is important to be able to cast all of Tinker's stuff quickly and then rearm
+Puck: 
+	-Uncheck "Channeled Abilities Requie Hold/Stop" in Basic Options
+		-This is necessary in order to blink out of phase shift (very important for Puck's survivability)
+Meepo:
+	-Enable Quickcast for 'Poof' ability under his 'Unit Specific Hotkeys'
+		-This is necessary for quickly poofing all Meepos to one spot, and for comboing with blink dagger
 
 BRYAN'S HOTKEY SCHEME EXPLAINED:
 
