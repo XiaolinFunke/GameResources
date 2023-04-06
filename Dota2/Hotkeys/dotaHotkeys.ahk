@@ -66,13 +66,14 @@ return
 
 ;;;;;;; Make alt function for use with inventory keys (can't use alt in game because it's hard-coded to beacon)
 ;Note, we can't use Ctrl either, since observer wards have a different function when ctrl is held
-*!a::Send u
-*!s::Send i
-*!e::Send o
-*!f::Send j
-*!d::Send k
-*!r::Send l
-*!t::Send {,}
+;Using remap syntax so that keyup and keydown are separate events (useful for quickcast on keyup)
+*!a::u
+*!s::i
+*!e::o
+*!f::j
+*!d::k
+*!r::l
+*!t::,
 ;;;;;; Make alt function for use with camera hotkeys (can set them using the mouse-button bound to ctrl, or ctrl itself. Don't use shift, since you may be shift-clicking around while moving cameras)
 *!g::Send 7
 *!c::Send 8
