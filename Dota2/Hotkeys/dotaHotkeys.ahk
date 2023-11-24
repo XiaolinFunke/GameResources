@@ -114,17 +114,14 @@ z::Left
 Right::Ctrl
 
 
-
-
-
-;;;;NO LONGER USED
 ;Make alt function as ctrl for subgroup order modifier key
-;No longer use, since it can make spamming right click and items sometimes use the item with ctrl (which will high five if in first slot)
-;!RButton::
-;Send ^{RButton}
-;return
-;No longer use, since it can make spamming left click and items sometimes use the item with ctrl (which will high five if in first slot)
+;Don't use on my old laptop, since it can make spamming right click and items would sometimes use the item with ctrl (which will high five if in first slot)
+;Not sure why this was only an issue on there, even with the mechanical keyboard plugged in
+!RButton::
+Send ^{RButton}
+return
+
 ;;;;;; Make Alt function as Ctrl for Ctrl-clicking to select multiple units only
-;!LButton::
-;Send ^{LButton}
-;return
+!LButton::
+Send ^{LButton}
+return
