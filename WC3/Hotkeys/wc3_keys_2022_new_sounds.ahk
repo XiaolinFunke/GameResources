@@ -219,3 +219,8 @@ return
 ;;;;;; to go to last alert
 ;;Capslock & Space::Send, {Space}
 ;;+Space::Send, {Space}
+
+;;;;;; make mouse wheel up act as 'Stop' for faking abilities like coil, dagger
+WheelUp::
+Send, c
+return
