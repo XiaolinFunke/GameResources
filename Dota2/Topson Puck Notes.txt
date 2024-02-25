@@ -1,0 +1,41 @@
+Topson Puck notes:
+
+At -3s game time, can be near safe rune and use orb, then grab it and jaunt
+Harrassing enemy melee hero (ember) a lot
+Getting extra hits in due to aggro cooldown
+Using stop as well as left/right for blocking?
+Waning rift at level 2 can help secure last hits as well (if don't need phase shift until lvl 4)
+Orb towards 2nd rune when 1/3 of the way between midline and 1st rune can help you get both runes
+Clearing wave with orb towards a rune can also help grab them without missing much
+Don't forget gold runes at 3:00 intervals
+
+Golem creeps can be finished with an orb that then also hits their death-spawned guys
+
+blink in and then do all spells and orb pop out. Hit more reliably with orb and can get out more reliably
+
+mage slayer is insane right now (Patch 7.35b), and can be applied to everyone with puck shard (unlike witch's blade)
+
+Mage Slayer vs. Witch's Blade:
+-150 cost
++5 attack speed
++0.5 mana regen
+-6 armor
+-2 int
+-300 Atk Projectile speed
++25% magic resist
+20 DPS for 6 seconds vs. 0.75 * int for 4 seconds (Witch's blade is generally much more DPS, but can only be applied once every 9s)
+0 cooldown vs. 9s cooldown
+40% less spell dmg on people hit vs. 25% slow on people hit
+
+
+When team is in deep and you want to help but have a bad feeling about it, blink in and orb backward, use all spells and then pop out
+Hitting multiple camps with orb can be good if they are close, but otherwise can just orb in direction you want to go after
+
+
+Dendi:
+Can skip boots and get a fast witch's blade sometimes
+Go for both runes with the orb trick!
+When trying to dmg from afar, don't just throw orb --- blink in, silence, orb, then atk, then phase shift and jaunt
+
+
+Early last-hitting. Throw attack first and THEN orb

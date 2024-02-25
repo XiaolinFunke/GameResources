@@ -74,11 +74,6 @@ return
 *!d::k
 *!r::l
 *!t::,
-;;;;;; Make alt function for use with camera hotkeys (can set them using the mouse-button bound to ctrl, or ctrl itself. Don't use shift, since you may be shift-clicking around while moving cameras)
-*!g::Send 7
-*!c::Send 8
-*!w::Send 9
-*!3::Send -
 
 ;;;;;; Make Caps lock a usable key (without toggling your upper/lower case)
 *Capslock::m
@@ -97,18 +92,25 @@ LWin::LAlt
 +4::Send, ^4
 +v::Send, ^v
 
+;;;;;;; Make ctrl + hotkeys function as "select allies" for moving camera to other lanes quickly
+^Space::Send, 7
+^c::Send, 8
+^w::Send, 9
+
+
+;;;;NO LONGER USED - I never use adding to control groups in Dota anyway, and this way I can use it for moving camera to allies instead 
 ;;;;;;; Make ctrl function as shift for adding to control groups only
 ;Note that we need to use ::Send here, instead of the 'remap' syntax of a::b, since remap will preserve any modifier keys held
-^Space::Send, +{Space}
-^c::Send, +c
-^w::Send, +w
-^4::Send, +4
-^v::Send, +v
+;^Space::Send, +{Space}
+;^c::Send, +c
+;^w::Send, +w
+;^4::Send, +4
+;^v::Send, +v
 
 ;;;;;; Make Z send Alt Modifier (Front side mouse button, which for me is Left Arrow Key due to Logitech Ghub)
 z::Left
 
-;;;;;; Make front side mouse button function as Ctrl
+;;;;;; Make back side mouse button function as Ctrl
 ;;;;;; Note that my Logitech GHub binds it to Right, that's why Right is used here
 ;;;;;; A different key may be needed depending on your mouse settings
 Right::Ctrl
