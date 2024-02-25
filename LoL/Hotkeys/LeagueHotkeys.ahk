@@ -81,7 +81,14 @@ return
 ;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Alt
 LWin::LAlt
 
-;;;;;; Make front side mouse button function as Ctrl
+;;;;;; Make back side mouse button function as Ctrl
 ;;;;;; Note that my Logitech GHub binds it to Right, that's why Right is used here
 ;;;;;; A different key may be needed depending on your mouse settings
 Right::Ctrl
+
+;;;;;; Make front side mouse button function as Alt
+Left::LAlt
+
+;;;;;; Make Z send Alt for pinging purposes
+z::LAlt
+
