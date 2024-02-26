@@ -129,53 +129,33 @@ else
 return
 
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;; CTRL GROUP MANAGEMENT HOTKEYS ;;;;;;;
+;;;;;;; CTRL GROUP HOTKEYS ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
-
-;;;;;;Front mouse button + ability hotkeys send inventory keys
-;;;;;;(Front side mouse button, which for me is Left Arrow Key for me due to Logitech Ghub)
-; Arrangement is like so:
-; E F
-; A S
-; D R
-Left & E::Send, {Numpad7}
-Left & A::Send, {Numpad4}
-Left & D::Send, {Numpad1}
-Left & F::Send, {Numpad8}
-Left & S::Send, {Numpad5}
-Left & R::Send, {Numpad2}
-
-
-;;;;'Macro' mode modifier key
-;;; When Back mouse button is held, Map keys to other side of the keyboard
-;;; This allows us to overlap macro hotkeys with hotkeys we use for micro that we would not otherwise be able to overlap (like unit control groups overlapping with building hotkeys)
-;;; Note that not all keys actually need to be remapped, since some keys already work fine when being used for both micro and macro (like unit ability keys also being used to build units)
-;;; So, for convenience, those keys are not remapped, and will just work for both micro and macro situations, whether or not the 'macro' modifier key is held
-Right & W::Send, u
-Right & R::Send, i
-Right & D::Send, o
-Right & C::Send, j
-;;;;;;Macro ctrl groups --- ensure setting them works with shift
-;;;;;; Send blind so that modifiers will be preserved (so setting the ctrl groups will work too)
-Right & Space::SendKeyWithRemappedModifier("6")
-Right & T::SendKeyWithRemappedModifier("7")
-Right & G::SendKeyWithRemappedModifier("8")
-Right & 4::SendKeyWithRemappedModifier("9")
-Right & Y::SendKeyWithRemappedModifier("0")
-
-;;;; Micro control groups - ensure setting them works with shift
-;;;; * is necessary here to preserve modifiers (whereas that happens automatically with the Key & Key combinations above)
+;;;; Micro control groups - ensure setting them works with shift and adding with Alt
+;;;; * is necessary here to preserve modifiers (whereas that happens automatically with the Key & Key combinations used in the macro ctrl groups)
 *Space::SendKeyWithRemappedModifier("1")
 *C::SendKeyWithRemappedModifier("2")
 *W::SendKeyWithRemappedModifier("3")
 *T::SendKeyWithRemappedModifier("4")
 *Y::SendKeyWithRemappedModifier("5")
 
+;;;;;;Macro ctrl groups --- ensure setting them works with shift and adding with Alt
+Right & Space::SendKeyWithRemappedModifier("6")
+Right & T::SendKeyWithRemappedModifier("7")
+Right & G::SendKeyWithRemappedModifier("8")
+Right & 4::SendKeyWithRemappedModifier("9")
+Right & Y::SendKeyWithRemappedModifier("0")
+
+;;;;;; Hero hotkeys
+*R::Send, {F1}
+*D::Send, {F2}
+*G::Send, {F3}
+
 ;;;; Since some ctrl group hotkeys are already triggered using 2 keys in combination, and 3 key combinations are not supported by autohotkey,
-;;;; Use this function to have shift function as Ctrl for setting ctrl groups
+;;;; Use this function to have shift function as Ctrl for setting ctrl groups and Alt function as shift for Ctrl group adding
 SendKeyWithRemappedModifier(keyToSend)
 {
   if (GetKeyState("Shift")) or (GetKeyState("Shift"), "P") {
@@ -191,15 +171,73 @@ SendKeyWithRemappedModifier(keyToSend)
   }
 }
 
-;;;;;; For subgroup order modifier key (useful for destro micro w/ statues and sending ghoul to lumber at start of game)
-;;;;;; Use ALT or Windows key (if you miss alt)
-;*LAlt::
-;sendinput, {Ctrl Down}
-;keywait, LAlt
-;sendinput, {Ctrl Up}
-;return
 
-;Make alt function as ctrl for subgroup order modifier key
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;; INVENTORY HOTKEYS ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;Front mouse button + ability hotkeys send inventory keys
+;;;;;;(Front side mouse button, which for me is Left Arrow Key for me due to Logitech Ghub)
+; Arrangement is like so:
+; E F
+; A S
+; D R
+Left & E::Send, {Numpad7}
+Left & A::Send, {Numpad4}
+Left & D::Send, {Numpad1}
+Left & F::Send, {Numpad8}
+Left & S::Send, {Numpad5}
+Left & R::Send, {Numpad2}
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;; MACRO MODE MDOFIER KEY ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;'Macro' mode modifier key (if confused, see hotkey explanation at the top of this script)
+;;; When Back mouse button is held, Map keys to other side of the keyboard
+;;; Note that not all keys actually need to be remapped, since some keys already work fine when being used for both micro and macro (like unit ability keys also being used to build units)
+;;; So, for convenience, those keys are not remapped, and will just work for both micro and macro situations, whether or not the 'macro' modifier key is held
+Right & W::Send, u
+Right & R::Send, i
+Right & D::Send, o
+Right & C::Send, j
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;; SIMPLE REBINDS TO GET AROUND HARD-CODED / UNBINDABLE KEYS ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;; Make DPI mouse button function as 'P', since '0' is hardcoded to be a ctrl group in WC3
+;;;;;; Note that my Logitech GHub binds it to 0, that's why 0 is used here
+;;;;;; A different key may be needed depending on your mouse settings
+0::p
+
+;;;;;; Make mouse wheel middle button click send K to be a useable key
+MButton::
+Send, k
+return
+
+;;;;;; Make Caps lock a usable key (without toggling your upper/lower case)
+*Capslock::l
+
+;;;;;; Make mouse wheel down and up act as the same useable key
+;;;;;; Using this for 'Stop' for faking abilities like coil, dagger
+;;;;;; and for spamming stop on a tower to stop it from taking XP
+WheelDown::
+WheelUp::
+Send, m
+return
+
+;;;;;;; Make '3' work as Alt for beaconing purposes only
+3 & LButton::
+Send !{LButton}
+return
+
+;;;;;; Make alt function as ctrl for subgroup order modifier key (useful for destro micro w/ statues and sending ghoul to lumber at start of game)
 !RButton::
 Send ^{RButton}
 return
@@ -208,102 +246,6 @@ return
 Send ^{LButton}
 return
 
-
 ;;;;;; Alias windows key to Alt
 ;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Alt
 LWin::LAlt
-;;;;;; Disable windows key, make it send the same thing as alt instead
-;*LWin::
-;sendinput, {Ctrl Down}
-;keywait, LWin
-;sendinput, {Ctrl Up}
-;return
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;; CTRL GROUP MANAGEMENT HOTKEYS ;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;;;;; Make alt function to ADD TO hotkey groups
-;;;;;;; Use remap syntax (x::y) so that Holding alt to add to the group won't toggle your health bars off
-;; Doesn't work because Alt is also functioning as Ctrl, so it will SET the hotkey
-!1::+1
-;!2::+2
-;!3::+3
-;!4::+4
-;!5::+5
-;!6::+6
-;!7::+7
-;!8::+8
-;!9::+9
-;!0::+0
-;!Tab::!Tab
-;Alt & 3::Send, +3
-;Alt & 2::Send, +2
-;Alt & 4::Send, +4
-;Alt & 5::Send, +5
-;Alt & 6::Send, +6
-;Alt & 7::Send, +7
-;Alt & 8::Send, +8
-;Alt & 9::Send, +9
-;Alt & 0::Send, +0
-
-;Alt & 2::SendWithShiftButNotCtrlHeld("2")
-
-;;;; Use this function to have alt function as shift for adding to ctrl groups
-;SendWithShiftButNotCtrlHeld(keyToSend)
-;{
-;  if (GetKeyState("Ctrl")) or (GetKeyState("Ctrl"), "P") {
-;    ;;;; Must release Ctrl, since Shift + Ctrl + hotkey SETS the control group rather than adding to it (unlike in dota2)
-;    Send {Ctrl Up}
-;	Send +%keyToSend%
-;	Send {Ctrl Down}
- ; }
- ; else
- ; {
- ;   Send, +%keyToSend%
- ; }
-;}
-
-
-
-
-
-;;;;;; Hero hotkeys
-*R::Send, {F1}
-*D::Send, {F2}
-*G::Send, {F3}
-
-;;;;;;; '3' is alt for beaconing purposes only
-3 & LButton::
-Send !{LButton}
-return
-
-;*3::
-;sendinput, {Alt Down}
-;keywait, 3
-;sendinput, {Alt Up}
-;return
-;;;;Since Alt is functioning as Ctrl, use 3 + Tab to alt tab instead
-;3 & Tab::Send, {AltTab}
-
-
-;;;;;; make mouse wheel down and up act as 'Stop' for faking abilities like coil, dagger
-;;;;;; and for spamming stop on a tower to stop it from taking XP
-WheelDown::
-WheelUp::
-Send, m
-return
-
-;;;;;; Make Caps lock a usable key (without toggling your upper/lower case)
-*Capslock::l
-
-;;;;;; make mouse wheel middle button click send K for learn ability on hero (middle mouse button does not appear to be able to be bound otherwise)
-MButton::
-Send, k
-return
-
-;;;;;; Make DPI mouse button function as 'P' for "Hold Position", since '0' key does not seem to be able to be bound in WC3
-;;;;;; Note that my Logitech GHub binds it to 0, that's why 0 is used here
-;;;;;; A different key may be needed depending on your mouse settings
-0::p
