@@ -1,0 +1,49 @@
+Unit hotkeys:
+1: Space  (usually melee)
+2: C      (usually ranged)
+3: W      (usually casters/siege/air)
+4: T      (Hit squad / utility unit)
+5: 5      (Hit squad / utility unit)
+
+Hero hotkeys:
+1st: R
+2nd: D
+3rd: G
+
+Macro hotkeys:
+6: MB + Space      (Main production buildings)
+7: MB + T          (Main)
+8: MB + G          (Upgrade building)
+9: MB + 4          (Altar)
+0: MB + Y          (Lumber peons / peasants / ghouls / AoW? / wisps?)
+
+Ability hotkeys:
+A S E F
+
+Inventory Hotkeys:
+Front mouse button + key
+E F
+A S
+D R
+
+(TP)               (Staff, Scroll of speed)
+(Invuln / healing pot)   (Scroll of healing)
+(Mana pot)   (Scroll of protection)
+
+
+Basic hotkeys:
+Atk: Caps lock
+Patrol: H
+Move: V
+Hold position: 3
+Stop: Mouse wheel down and up (for spamming)
+Tab between unit/building types: Tab OR Mouse DPI button
+'4' Also sends shift, for shift -- for shift + attack, shift + patrol
+Uproot / reroot: Q
+Beacon: X
+
+Subgroup Order Modifier Key or add to control group:
+Alt
+
+Set control group:
+Shift

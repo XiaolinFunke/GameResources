@@ -11,6 +11,7 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
 menu, tray, Icon, %War%, 1, 1 
 
+;;;COMMENTED FOR TESTING
 ;;;;; Hotkeys ;;;;;
 #ifWinActive, Warcraft III ;*new to ver 1.0.41.00* only run when war3 is running
 
@@ -204,17 +205,17 @@ Right & W::Send, u
 Right & R::Send, i
 Right & D::Send, o
 Right & C::Send, j
-
+Right & X::Send, n
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; SIMPLE REBINDS TO GET AROUND HARD-CODED / UNBINDABLE KEYS ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;; Make DPI mouse button function as 'P', since '0' is hardcoded to be a ctrl group in WC3
+;;;;;; Make DPI mouse button function as Tab for cycling through units / buildings
 ;;;;;; Note that my Logitech GHub binds it to 0, that's why 0 is used here
 ;;;;;; A different key may be needed depending on your mouse settings
-0::p
+0::Tab
 
 ;;;;;; Make mouse wheel middle button click send K to be a useable key
 MButton::
@@ -232,10 +233,13 @@ WheelUp::
 Send, m
 return
 
-;;;;;;; Make '3' work as Alt for beaconing purposes only
-3 & LButton::
+;;;;;; Make 'X' work as Alt for beaconing purposes only
+X & LButton::
 Send !{LButton}
 return
+
+;;;;;; Make '3' a useable key for binding
+3::b
 
 ;;;;;; Make alt function as ctrl for subgroup order modifier key (useful for destro micro w/ statues and sending ghoul to lumber at start of game)
 !RButton::
