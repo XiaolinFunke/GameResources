@@ -128,19 +128,7 @@ UnButtonpos=2,0
 
 // Sentry Ward
 [aeye]
-Hotkey=W
-Buttonpos=1,2
-UnButtonpos=1,2
-
-
-[otbk]
-Hotkey=Q
-Buttonpos=0,0
-UnButtonpos=0,0
-
-
-[apg2]
-Hotkey=W
+Hotkey=S
 Buttonpos=1,2
 UnButtonpos=1,2
 
@@ -1423,29 +1411,29 @@ UnButtonpos=3,2
 
 // Purge
 [aprg]
-Hotkey=F
-Buttonpos=3,2
-UnButtonpos=3,2
-
-
-[apg2]
-Hotkey=F
-Buttonpos=3,2
-UnButtonpos=3,2
-
-
-// Lightning Shield
-[alsh]
 Hotkey=E
 Buttonpos=2,2
 UnButtonpos=2,2
 
 
-// Stasis Trap
-[asta]
+[apg2]
+Hotkey=E
+Buttonpos=2,2
+UnButtonpos=2,2
+
+
+// Lightning Shield
+[alsh]
 Hotkey=F
 Buttonpos=3,2
 UnButtonpos=3,2
+
+
+// Stasis Trap
+[asta]
+Hotkey=A
+Buttonpos=0,2
+UnButtonpos=0,2
 
 
 // Healing Ward
@@ -1471,7 +1459,7 @@ UnButtonpos=0,2
 
 // Ancestral Spirit
 [aast]
-Hotkey=R
+Hotkey=F
 Buttonpos=3,2
 UnButtonpos=3,2
 
@@ -1621,13 +1609,6 @@ UnButtonpos=1,2
 Hotkey=F
 Buttonpos=3,2
 UnButtonpos=3,2
-
-
-[undefined]
-Hotkey=A
-Buttonpos=3,2
-UnButtonpos=3,2
-
 
 // TaunT
 [anta]
@@ -2041,9 +2022,9 @@ UnButtonpos=3,1
 
 // Burning Oil
 [robf]
-Hotkey=V
-Buttonpos=3,2
-UnButtonpos=3,2
+Hotkey=I
+Buttonpos=3,0
+UnButtonpos=3,0
 
 
 // Research Brute Strength
@@ -2142,8 +2123,8 @@ UnButtonpos=2,0
 // Train Shaman
 [oshm]
 Hotkey=S
-Buttonpos=2,0
-UnButtonpos=2,0
+Buttonpos=1,1
+UnButtonpos=1,1
 
 
 // Train Witch Doctor
@@ -2211,9 +2192,9 @@ UnButtonpos=1,0
 
 // Research Envenomed Spears
 [rovs]
-Hotkey=V
-Buttonpos=3,2
-UnButtonpos=3,2
+Hotkey=I
+Buttonpos=3,0
+UnButtonpos=3,0
 
 
 // Upgrade War Drums
@@ -2225,35 +2206,30 @@ UnButtonpos=0,0
 
 // Train Spirit Walker
 [ospm]
-Hotkey=F
-Buttonpos=3,1
-UnButtonpos=3,1
-
-
-// Train Tauren
-[otau]
 Hotkey=E
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
+// Train Tauren
+[otau]
+Hotkey=S
+Buttonpos=1,1
+UnButtonpos=1,1
+
+
 // Spirit Walker Training
 [rowt]
-Hotkey=I,I,I
-Buttonpos=3,0
-UnButtonpos=3,0
-
-
-// Upgrade Pulverize
-[rows]
-Hotkey=O
+Hotkey=O,O,O
 Buttonpos=2,1
 UnButtonpos=2,1
 
 
-[undefined]
-Hotkey=M
-
+// Upgrade Pulverize
+[rows]
+Hotkey=U
+Buttonpos=1,0
+UnButtonpos=1,0
 
 // Critical Strike
 [aocr]
@@ -2355,7 +2331,6 @@ Hotkey=A
 Unhotkey=A
 Buttonpos=0,2
 UnButtonpos=0,2
-
 
 // Call to Arms
 [amil]
@@ -3035,6 +3010,8 @@ UnButtonpos=2,2
 [ahrl]
 Hotkey=A
 Unhotkey=A
+Buttonpos=0,2
+UnButtonpos=0,2
 
 
 // Burrow
@@ -4184,10 +4161,6 @@ Buttonpos=1,0
 UnButtonpos=1,0
 
 
-[undefined]
-Hotkey=M
-
-
 // Purchase Orb of Lightning
 [oli2]
 Hotkey=J
@@ -4326,9 +4299,9 @@ UnButtonpos=1,2
 
 // Build Voodoo Lounge
 [ovln]
-Hotkey=N
-Buttonpos=1,2
-UnButtonpos=1,2
+Hotkey=F
+Buttonpos=3,1
+UnButtonpos=3,1
 
 
 // Build Workshop
@@ -4340,9 +4313,9 @@ UnButtonpos=1,2
 
 // Berserker Upgrade
 [robk]
-Hotkey=N
-Buttonpos=1,2
-UnButtonpos=1,2
+Hotkey=A
+Buttonpos=0,1
+UnButtonpos=0,1
 
 
 // Purchase Tiny Great Hall
@@ -4520,3 +4493,181 @@ Buttonpos=0,2
 UnButtonpos=0,2
 
 
+////Assorted Passive Abilities////
+
+[apig]
+Tip=Permanent Immolation
+Buttonpos=0,2
+
+[antr]
+Tip=True Sight
+Buttonpos=0,2
+
+[acvs]
+Tip=Envenomed Weapons
+Buttonpos=3,1
+
+[aegr]
+Tip=Elune's Grace
+Buttonpos=1,2
+
+[amgl]
+Tip=Moon Glaive
+Buttonpos=1,2
+
+[aimp]
+Tip=Vorpal Blades
+Buttonpos=2,2
+
+[aspo]
+Tip=Slow Poison
+Buttonpos=2,2
+
+[assk]
+Tip=Hardened Skin
+Buttonpos=0,2
+
+[arsk]
+Tip=Resistant Skin
+Buttonpos=1,2
+
+[acor]
+Tip=Corrosive Breath
+Buttonpos=0,2
+
+[adtg]
+Tip=True Sight
+Buttonpos=0,2
+
+[anpi]
+Tip=Permanent Immolation
+Buttonpos=0,2
+
+[agyv]
+Tip=True Sight
+Buttonpos=0,2
+
+[agyb]
+Tip=Flying Machine Bombs
+Buttonpos=1,2
+
+[aflk]
+Tip=Flak Cannons
+Buttonpos=2,2
+
+[afsh]
+Tip=Fragmentation Shards
+Buttonpos=1,2
+
+[aroc]
+Tip=Barrage
+Buttonpos=0,2
+
+[amim]
+Tip=Spell Immunity
+Buttonpos=2,1
+
+[afbk]
+Tip=Feedback
+Buttonpos=3,2
+
+[asth]
+Tip=Storm Hammers
+Buttonpos=0,2
+
+[acmi]
+Tip=Spell Immunity
+Buttonpos=2,1
+
+[afbt]
+Tip=Feedback
+Buttonpos=3,2
+
+
+////Shipyard////
+
+[nbot]
+Tip=Hire Transport Ship (|cffffcc00Q|r) 
+Hotkey=Q
+Buttonpos=0,0
+
+////Sea Mercenary Camp////
+
+[ntrt]
+Tip=Hire Giant See Turtle (|cffffcc00Q|r)
+Hotkey=Q
+Buttonpos=0,0
+
+[nlsn]
+Tip=Hire Makrura Snapper (|cffffcc00W|r)
+Hotkey=W
+Buttonpos=1,0
+
+[nmsn]
+Tip=Hire Mur'gul Snarecaster (|cffffcc00E|r)
+Hotkey=E
+Buttonpos=2,0
+
+[nlds]
+Tip=Hire MaKrura Deepseer (|cffffcc00R|r)
+Hotkey=R
+Buttonpos=3,0
+
+////Ice Mercenary Camp
+
+[nitt]
+Tip=Hire Ice Troll Trapper (|cffffcc00Q|r)
+Hotkey=Q
+Buttonpos=0,0
+
+[nits]
+Tip=Hire Ice Troll Berserker (|cffffcc00W|r)
+Hotkey=W
+Buttonpos=1,0
+
+//Mud Golem also, but that's defined in regular mercenary camp as E
+
+[ngnv]
+Tip=Hire Gnoll Overseer (|cffffcc00R|r)
+Hotkey=R
+Buttonpos=3,0
+
+
+////Green Dragon Roost
+
+[ngrw]
+Tip=Summon Green Dragon Whelp (|cffffcc00Q|r) 
+Hotkey=Q
+Buttonpos=0,0
+
+[ngdk]
+Tip=Summon Green Drake (|cffffcc00W|r)
+Hotkey=W
+Buttonpos=1,0
+
+[ngrd]
+Tip=Summon Green Dragon (|cffffcc00E|r)
+Hotkey=E
+Buttonpos=2,0
+
+////Kobold Merc Camp (Tirisfal Glades)
+
+[nkob]
+Tip=Hire Kobold (|cffffcc00W|r)
+Hotkey=W
+Buttonpos=1,0
+
+[nass]
+Tip=Hire Assassin (|cffffcc00Q|r)
+Hotkey=Q
+Buttonpos=0,0
+
+[nkog]
+Tip=Hire Kobold Geomancer (|cffffcc00E|r)
+Hotkey=E
+Buttonpos=2,0
+
+[nmrr]
+Tip=Hire Murloc Huntsman (|cffffcc00R|r)
+Hotkey=R
+Buttonpos=3,0
