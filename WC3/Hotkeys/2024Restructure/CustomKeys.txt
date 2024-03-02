@@ -1960,7 +1960,7 @@ UnButtonpos=2,0
 
 // Build Altar of Storms
 [oalt]
-Hotkey=Q
+Hotkey=P
 Buttonpos=0,0
 UnButtonpos=0,0
 
@@ -2866,7 +2866,7 @@ UnButtonpos=2,0
 
 // Build Altar of Kings
 [halt]
-Hotkey=Q
+Hotkey=P
 Buttonpos=0,0
 UnButtonpos=0,0
 
@@ -2966,7 +2966,7 @@ UnButtonpos=2,0
 
 // Summon Altar of Darkness
 [uaod]
-Hotkey=Q
+Hotkey=P
 Buttonpos=0,0
 UnButtonpos=0,0
 
@@ -3533,7 +3533,7 @@ UnButtonpos=2,0
 
 // Create Altar of Elders
 [eate]
-Hotkey=Q
+Hotkey=P
 Buttonpos=0,0
 UnButtonpos=0,0
 

@@ -206,6 +206,7 @@ Right & R::Send, i
 Right & D::Send, o
 Right & C::Send, j
 Right & X::Send, n
+Right & Q::Send, p
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
