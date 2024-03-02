@@ -2257,9 +2257,9 @@ UnButtonpos=0,2
 
 // Hide
 [aihm]
-Hotkey=D
-Buttonpos=2,1
-UnButtonpos=2,1
+Hotkey=Q
+Buttonpos=0,0
+UnButtonpos=0,0
 
 
 // Summon Naga Sea Witch
@@ -4376,9 +4376,9 @@ UnButtonpos=1,2
 
 // Shadowmeld
 [ashm]
-Hotkey=D
-Buttonpos=2,1
-UnButtonpos=2,1
+Hotkey=Q
+Buttonpos=0,0
+UnButtonpos=0,0
 
 
 // Create Tree of Life
