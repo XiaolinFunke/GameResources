@@ -2257,7 +2257,7 @@ UnButtonpos=0,2
 
 // Hide
 [aihm]
-Hotkey=Q
+Hotkey=G
 Buttonpos=0,0
 UnButtonpos=0,0
 
@@ -3702,20 +3702,20 @@ UnButtonpos=2,0
 
 // Uproot
 [aro1]
-Hotkey=Q
-Unhotkey=Q
+Hotkey=G
+Unhotkey=G
 Buttonpos=0,0
 UnButtonpos=0,0
 
 
 [aro2]
-Hotkey=Q
+Hotkey=G
 Buttonpos=0,0
 UnButtonpos=0,0
 
 
 [aroo]
-Hotkey=Q
+Hotkey=G
 Buttonpos=0,0
 UnButtonpos=0,0
 
@@ -4376,7 +4376,7 @@ UnButtonpos=1,2
 
 // Shadowmeld
 [ashm]
-Hotkey=Q
+Hotkey=G
 Buttonpos=0,0
 UnButtonpos=0,0
 
