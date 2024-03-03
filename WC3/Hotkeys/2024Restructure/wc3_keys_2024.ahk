@@ -138,7 +138,7 @@ return
 ;;;; Micro control groups - ensure setting them works with shift and adding with Alt
 ;;;; * is necessary here to preserve modifiers (whereas that happens automatically with the Key & Key combinations used in the macro ctrl groups)
 *Space::SendKeyWithRemappedModifier("1")
-*C::SendKeyWithRemappedModifier("2")
+*F::SendKeyWithRemappedModifier("2")
 *W::SendKeyWithRemappedModifier("3")
 *T::SendKeyWithRemappedModifier("4")
 *Y::SendKeyWithRemappedModifier("5")
@@ -152,7 +152,7 @@ Right & Y::SendKeyWithRemappedModifier("0")
 
 ;;;;;; Hero hotkeys
 *R::Send, {F1}
-*D::Send, {F2}
+*C::Send, {F2}
 *Q::Send, {F3}
 
 ;;;; Since some ctrl group hotkeys are already triggered using 2 keys in combination, and 3 key combinations are not supported by autohotkey,
@@ -203,7 +203,7 @@ Left & R::Send, {Numpad2}
 ;;; So, for convenience, those keys are not remapped, and will just work for both micro and macro situations, whether or not the 'macro' modifier key is held
 Right & W::Send, u
 Right & R::Send, i
-Right & D::Send, o
+Right & F::Send, o
 Right & C::Send, j
 Right & X::Send, n
 Right & Q::Send, p
