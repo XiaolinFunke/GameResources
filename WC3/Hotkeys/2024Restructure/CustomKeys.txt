@@ -1790,7 +1790,7 @@ UnButtonpos=2,1
 
 // Build Tauren Totem
 [otto]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -1989,7 +1989,7 @@ UnButtonpos=0,2
 
 // Hide
 [aihm]
-Hotkey=G
+Hotkey=C
 Buttonpos=0,0
 UnButtonpos=0,0
 
@@ -2245,7 +2245,7 @@ UnButtonpos=3,0
 
 // Research Flare
 [rhfl]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -2435,7 +2435,7 @@ UnButtonpos=0,0
 
 // Build Arcane Sanctum
 [hars]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -2499,7 +2499,7 @@ UnButtonpos=3,0
 
 // Haunt Gold Mine
 [ugol]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -2686,7 +2686,7 @@ UnButtonpos=3,0
 
 // Research Web
 [ruwb]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -2967,7 +2967,7 @@ UnButtonpos=2,1
 
 // Create Chimaera Roost
 [edos]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3107,7 +3107,7 @@ UnButtonpos=3,0
 
 // Research Moon Glaive
 [remg]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3206,7 +3206,7 @@ UnButtonpos=3,0
 
 // Research Mark of the Claw
 [reeb]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3220,7 +3220,7 @@ UnButtonpos=1,1
 
 // Research Mark of the Talon
 [reec]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3348,7 +3348,7 @@ UnButtonpos=2,2
 
 // Purchase Potion of Lesser Invulnerability
 [pnvl]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3411,7 +3411,7 @@ UnButtonpos=1,0
 
 // Purchase Orb of Lightning
 [oli2]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3432,7 +3432,7 @@ UnButtonpos=3,0
 
 // Purchase Orb of Fire
 [ofr2]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3474,7 +3474,7 @@ UnButtonpos=1,1
 
 // Purchase Orb of Corruption
 [ocor]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3502,7 +3502,7 @@ UnButtonpos=3,0
 
 // Purchase Anti-magic Potion
 [pams]
-Hotkey=J
+Hotkey=C
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -3603,7 +3603,7 @@ UnButtonpos=1,2
 
 // Shadowmeld
 [ashm]
-Hotkey=G
+Hotkey=C
 Buttonpos=0,0
 UnButtonpos=0,0
 

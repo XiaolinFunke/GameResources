@@ -152,8 +152,8 @@ Right & Y::SendKeyWithRemappedModifier("0")
 
 ;;;;;; Hero hotkeys
 *R::Send, {F1}
-*C::Send, {F2}
-*T::Send, {F3}
+*T::Send, {F2}
+*G::Send, {F3}
 
 ;;;; Since some ctrl group hotkeys are already triggered using 2 keys in combination, and 3 key combinations are not supported by autohotkey,
 ;;;; Use this function to have shift function as Ctrl for setting ctrl groups and Alt function as shift for Ctrl group adding
@@ -204,7 +204,6 @@ Left & Z::Send, {Numpad2}
 Right & W::Send, u
 Right & R::Send, i
 Right & F::Send, o
-Right & C::Send, j
 Right & X::Send, n
 Right & Q::Send, p
 

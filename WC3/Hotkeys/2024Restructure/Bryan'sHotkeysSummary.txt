@@ -7,8 +7,8 @@ Unit hotkeys:
 
 Hero hotkeys:
 1st: R
-2nd: C
-3rd: T
+2nd: T
+3rd: G
 
 Macro hotkeys:
 6: MB + Space      (Main production buildings)
@@ -39,7 +39,7 @@ Hold position: 3
 Stop: Mouse wheel down and up (for spamming)
 Tab between unit/building types: Tab OR Mouse DPI button
 '4' Also sends shift, for shift -- for shift + attack, shift + patrol
-Uproot / reroot, Hide/Shadowmeld: G 
+Uproot / reroot, Hide/Shadowmeld: C
 Beacon: X
 
 Subgroup Order Modifier Key or add to control group:
