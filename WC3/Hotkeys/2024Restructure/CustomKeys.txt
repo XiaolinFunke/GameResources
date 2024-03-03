@@ -1945,7 +1945,7 @@ UnButtonpos=3,0
 
 // Upgrade War Drums
 [rwdm]
-Hotkey=Q
+Hotkey=P
 Buttonpos=0,0
 UnButtonpos=0,0
 
@@ -3149,7 +3149,7 @@ UnButtonpos=1,0
 
 // Research Well Spring
 [rews]
-Hotkey=Q
+Hotkey=P
 Buttonpos=0,0
 UnButtonpos=0,0
 

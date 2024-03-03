@@ -2,13 +2,13 @@ Unit hotkeys:
 1: Space  (usually melee)
 2: F      (usually ranged)
 3: W      (usually casters/siege/air)    
-4: T      (Hit squad / utility unit)
+4: Y      (Hit squad / utility unit)
 5: 5      (Hit squad / utility unit)
 
 Hero hotkeys:
 1st: R
 2nd: C
-3rd: Q
+3rd: T
 
 Macro hotkeys:
 6: MB + Space      (Main production buildings)
@@ -18,13 +18,13 @@ Macro hotkeys:
 0: MB + Y          (Lumber peons / peasants / ghouls / AoW? / wisps?)
 
 Ability hotkeys:
-A S E F        A S E D TODO
+A S E F
 
 Inventory Hotkeys:
 Front mouse button + key
-E F
-A S
-D R
+E D 
+W S   
+A Z   
 
 (TP)                   (Scroll of healing)
 (Invuln / healing pot)   (Staff, Scroll of speed)

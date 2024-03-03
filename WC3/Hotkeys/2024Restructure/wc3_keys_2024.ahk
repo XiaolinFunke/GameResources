@@ -140,8 +140,8 @@ return
 *Space::SendKeyWithRemappedModifier("1")
 *F::SendKeyWithRemappedModifier("2")
 *W::SendKeyWithRemappedModifier("3")
-*T::SendKeyWithRemappedModifier("4")
-*Y::SendKeyWithRemappedModifier("5")
+*Y::SendKeyWithRemappedModifier("4")
+*5::SendKeyWithRemappedModifier("5")
 
 ;;;;;;Macro ctrl groups --- ensure setting them works with shift and adding with Alt
 Right & Space::SendKeyWithRemappedModifier("6")
@@ -153,7 +153,7 @@ Right & Y::SendKeyWithRemappedModifier("0")
 ;;;;;; Hero hotkeys
 *R::Send, {F1}
 *C::Send, {F2}
-*Q::Send, {F3}
+*T::Send, {F3}
 
 ;;;; Since some ctrl group hotkeys are already triggered using 2 keys in combination, and 3 key combinations are not supported by autohotkey,
 ;;;; Use this function to have shift function as Ctrl for setting ctrl groups and Alt function as shift for Ctrl group adding
@@ -181,15 +181,15 @@ SendKeyWithRemappedModifier(keyToSend)
 ;;;;;;Front mouse button + ability hotkeys send inventory keys
 ;;;;;;(Front side mouse button, which for me is Left Arrow Key for me due to Logitech Ghub)
 ; Arrangement is like so:
-; E F
-; A S
-; D R
+; E D
+; W S
+; A Z
 Left & E::Send, {Numpad7}
-Left & A::Send, {Numpad4}
-Left & D::Send, {Numpad1}
-Left & F::Send, {Numpad8}
+Left & W::Send, {Numpad4}
+Left & A::Send, {Numpad1}
+Left & D::Send, {Numpad8}
 Left & S::Send, {Numpad5}
-Left & R::Send, {Numpad2}
+Left & Z::Send, {Numpad2}
 
 
 
@@ -214,9 +214,11 @@ Right & Q::Send, p
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;; Make DPI mouse button function as Tab for cycling through units / buildings
+;;;;;; Same with Q
 ;;;;;; Note that my Logitech GHub binds it to 0, that's why 0 is used here
 ;;;;;; A different key may be needed depending on your mouse settings
 0::Tab
+Q::Tab
 
 ;;;;;; Make mouse wheel middle button click send K to be a useable key
 MButton::
