@@ -1783,7 +1783,7 @@ UnButtonpos=3,2
 
 // Build Beastiary
 [obea]
-Hotkey=O
+Hotkey=D
 Buttonpos=2,1
 UnButtonpos=2,1
 
@@ -2442,7 +2442,7 @@ UnButtonpos=2,2
 
 // Build Scout Tower
 [hwtw]
-Hotkey=O
+Hotkey=D
 Buttonpos=2,1
 UnButtonpos=2,1
 
@@ -2478,7 +2478,7 @@ UnButtonpos=0,2
 
 // Sacrifice 
 [alam]
-Hotkey=O
+Hotkey=D
 Buttonpos=2,1
 UnButtonpos=2,1
 
@@ -2527,7 +2527,7 @@ UnButtonpos=0,0
 
 // Summon Temple of the Damned
 [utod]
-Hotkey=O
+Hotkey=D
 Buttonpos=2,1
 UnButtonpos=2,1
 
@@ -2960,7 +2960,7 @@ UnButtonpos=3,1
 
 // Create Ancient of Wind
 [eaow]
-Hotkey=O
+Hotkey=D
 Buttonpos=2,1
 UnButtonpos=2,1
 
