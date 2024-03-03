@@ -47,7 +47,14 @@ InResourceMenu := False
 ;However, I would recommend still using the modifier key as appropriate whenever the task calls for it, even if it will not affect the key being pressed
 ;since this is much easier to conceptualize and remember than memorizing which keys are actually affected by the 'Macro layer' modifier key
 
-
+;;;;As far as hand placement goes, the hand should be comfortably positioned on A, S, E, F, Spacebar. Naturally, we are going to bind as many keys as possible to keys near this
+;hand placement. You will notice that all units are built with A,S,E or F. It would seem natural to also place unit/hero abilities on A, S, E, and F, as in my Dota2 keys. However, the 4th ability was moved from F to D
+;since many of the important unit/hero hotkeys are hit with the pointer finger, and we want to avoid the same finger hitting two keys in a row in quick succession if possible. Thus, hitting a hero hotkey and then that 
+;hero's fourth ability will be two separate fingers. Having two abilities that are the same finger is less of an issue because there is usually some cast time to wait for before spamming a second ability right away anyway
+;The 'S' ability key could likewise be moved such that it is hit with the pinky rather than ring finger, since unit ctrl group 3 is 'W', which is also hit with the ring finger. However, this ctrl group is usually 
+;reserved for casters whose second ability I have generally bound to an ability that is not super critial to hit fast. (or not bound to an ability at all)
+;And the comfort of the 'S' key rather than a pinky key such as 'Q' or 'Z' seems to be worth the tradeoff
+;;;;;Item hotkeys follow a similar rationale -- None of them are executed with the pointer finger, since you often want to hit a hero hotkey with pointer finger and then hit an item quickly
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; META HOTKEYS (PAUSING, RESOURCE TRADING, ETC) ;;;;;;;

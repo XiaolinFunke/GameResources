@@ -18,7 +18,7 @@ Macro hotkeys:
 0: MB + Y          (Lumber peons / peasants / ghouls / AoW? / wisps?)
 
 Ability hotkeys:
-A S E F
+A S E D
 
 Inventory Hotkeys:
 Front mouse button + key
