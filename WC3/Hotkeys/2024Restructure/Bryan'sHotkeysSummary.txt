@@ -47,3 +47,11 @@ Alt
 
 Set control group:
 Shift
+
+
+
+
+W3Champions hotkey setting works well except:
+Can't move build or rally icons because it doesn't know about the special entries needed
+It always adds extra entries for tier3 main upgrades which means that key doesn't get rebound properly unless you remove those
+It doesn't allow you to move the icon of some passives like spell immunity, which have special entries in the customkeys
