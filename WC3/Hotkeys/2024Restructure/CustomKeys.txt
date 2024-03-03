@@ -1437,13 +1437,6 @@ Unhotkey=A
 Buttonpos=0,2
 UnButtonpos=0,2
 
-
-[ofrt]
-Hotkey=F
-Buttonpos=3,1
-UnButtonpos=3,1
-
-
 [otbk]
 Hotkey=S
 Buttonpos=1,1
@@ -2111,13 +2104,6 @@ Hotkey=E
 Buttonpos=2,2
 UnButtonpos=2,2
 
-
-[hcas]
-Hotkey=F
-Buttonpos=3,1
-UnButtonpos=3,1
-
-
 // Train Peasant
 [hpea]
 Hotkey=S
@@ -2670,12 +2656,6 @@ Buttonpos=3,2
 UnButtonpos=3,2
 
 
-[unp2]
-Hotkey=F
-Buttonpos=3,1
-UnButtonpos=3,1
-
-
 // Research Backpack
 [rupm]
 Hotkey=A
@@ -3069,13 +3049,6 @@ Hotkey=E
 Unhotkey=E
 Buttonpos=2,2
 UnButtonpos=2,2
-
-
-[etoe]
-Hotkey=F
-Buttonpos=3,1
-UnButtonpos=3,1
-
 
 // Research Nature’s Blessing
 [renb]
