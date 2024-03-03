@@ -1403,9 +1403,9 @@ UnButtonpos=0,2
 
 // Spirit Link
 [aspl]
-Hotkey=S
-Buttonpos=1,2
-UnButtonpos=1,2
+Hotkey=D
+Buttonpos=3,2
+UnButtonpos=3,2
 
 
 // Unstable Concoction
@@ -4006,9 +4006,9 @@ UnButtonpos=3,2
 
 // Ancestral Spirit
 [aast]
-Hotkey=D
-Buttonpos=3,2
-UnButtonpos=3,2
+Hotkey=S
+Buttonpos=1,2
+UnButtonpos=1,2
 
 
 // Upgrade to Stronghold/Fortress
