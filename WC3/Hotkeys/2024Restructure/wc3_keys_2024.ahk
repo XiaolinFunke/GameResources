@@ -220,11 +220,13 @@ Right & Q::Send, p
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;; Make DPI mouse button function as Tab for cycling through units / buildings
-;;;;;; Same with Q
+;;;;;; Same with Q (using send syntax for Q because remap wasn't working for some reason)
 ;;;;;; Note that my Logitech GHub binds it to 0, that's why 0 is used here
 ;;;;;; A different key may be needed depending on your mouse settings
 0::Tab
-Q::Tab
+Q::
+Send, {Tab} 
+return
 
 ;;;;;; Make mouse wheel middle button click send K to be a useable key
 MButton::

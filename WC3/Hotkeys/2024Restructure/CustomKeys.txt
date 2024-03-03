@@ -1485,21 +1485,21 @@ Buttonpos=2,2
 UnButtonpos=2,2
 
 
-// Wind Walk
+// Wind Walk - Wind panda + various creeps - shared ability
 [anwk]
 Hotkey=S
 Buttonpos=1,2
 UnButtonpos=1,2
 
 
-// Cyclone
+// Cyclone - Wind panda + various creeps -- shared ability
 [accy]
 Hotkey=D
 Buttonpos=3,2
 UnButtonpos=3,2
 
 
-// TaunT
+// TaunT - Earth panda
 [anta]
 Hotkey=E
 Buttonpos=2,2
@@ -1527,11 +1527,11 @@ Buttonpos=2,2
 UnButtonpos=2,2
 
 
-// Dispel Magic
+// Dispel Magic - wind panda + various creeps, shared ability
 [adsm]
-Hotkey=S
-Buttonpos=1,2
-UnButtonpos=1,2
+Hotkey=E
+Buttonpos=2,2
+UnButtonpos=2,2
 
 
 // Cripple
