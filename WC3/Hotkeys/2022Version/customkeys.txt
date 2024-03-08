@@ -25,41 +25,35 @@ Tip=Attack Ground (|cffffcc00R|r)
 Hotkey=R
 ButtonPos=3,2
 
-/[cmdbuild]
-Hotkey=W
-Buttonpos=2,2
-UnButtonpos=2,2
+//build (generic)
+[CmdBuild]
+Tip=Build Structur|cffffcc00e|r
+Hotkey=E
+ButtonPos=2,2
 
+//build (human)
+[CmdBuildHuman]
+Tip=Build Structur|cffffcc00e|r
+Hotkey=E
+ButtonPos=2,2
 
-// Build Structure
-[cmdbuildhuman]
-Hotkey=W
-// This entry is necessary to change the icon placement of the build cmd
-[AHbu]
-Buttonpos=2,2
+//build (orc)
+[CmdBuildOrc]
+Tip=Build Structur|cffffcc00e|r
+Hotkey=E
+ButtonPos=2,2
 
+//build (nightelf)
+[CmdBuildNightElf]
+Tip=Cr|cffffcc00e|rate
+ Building
+Hotkey=E
+ButtonPos=2,2
 
-// Build Structure
-[cmdbuildorc]
-Hotkey=W
-// This entry is necessary to change the icon placement of the build cmd
-[AObu]
-Buttonpos=2,2
-
-
-// Create Building
-[cmdbuildnightelf]
-Hotkey=W
-// This entry is necessary to change the icon placement of the build cmd
-[AEbu]
-Buttonpos=2,2
-
-
-// Summon Building
-[cmdbuildundead]
-Hotkey=W
-// This entry is necessary to change the icon placement of the build cmd
-[AUbu]
+//build (undead)
+[CmdBuildUndead]
+Tip=Summon Building [|cffffcc00E|r] 
+Hotkey=E
 Buttonpos=2,2
 
 //
