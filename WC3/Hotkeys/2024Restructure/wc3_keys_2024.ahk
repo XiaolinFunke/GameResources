@@ -48,13 +48,18 @@ InResourceMenu := False
 ;since this is much easier to conceptualize and remember than memorizing which keys are actually affected by the 'Macro layer' modifier key
 
 ;;;;As far as hand placement goes, the hand should be comfortably positioned on A, S, E, F, Spacebar. Naturally, we are going to bind as many keys as possible to keys near this
-;hand placement. You will notice that all units are built with A,S,E or F. It would seem natural to also place unit/hero abilities on A, S, E, and F, as in my Dota2 keys. However, the 4th ability was moved from F to D
-;since many of the important unit/hero hotkeys are hit with the pointer finger, and we want to avoid the same finger hitting two keys in a row in quick succession if possible. Thus, hitting a hero hotkey and then that 
-;hero's fourth ability will be two separate fingers. Having two abilities that are the same finger is less of an issue because there is usually some cast time to wait for before spamming a second ability right away anyway
-;The 'S' ability key could likewise be moved such that it is hit with the pinky rather than ring finger, since unit ctrl group 3 is 'W', which is also hit with the ring finger. However, this ctrl group is usually 
-;reserved for casters whose second ability I have generally bound to an ability that is not super critial to hit fast. (or not bound to an ability at all)
-;And the comfort of the 'S' key rather than a pinky key such as 'Q' or 'Z' seems to be worth the tradeoff
-;;;;;Item hotkeys follow a similar rationale -- None of them are executed with the pointer finger, since you often want to hit a hero hotkey with pointer finger and then hit an item quickly
+;hand placement. You will notice that all units are built with A,S,E or F. It would seem natural to also place unit/hero abilities on A, S, E, and F, as in my Dota2 keys. 
+;However, in WC3, it's more important to be able to hit a hotkey + ability quickly rather than ability + ability like in dota. Thus, I used A, W, S, and D instead, and
+;left E and F as hotkeys. 
+
+;Having two abilities that are the same finger (W and S) is less of an issue in WC3 because there is usually some cast time to wait for before spamming a second ability right away anyway
+;;;;Notice that none of the ability keys are hit with the pointer finger. This means that your main two ctrl groups as well as hero hotkeys will always be hit with a different
+;finger than the ability you want them to do, making that fast. The same is true for the third ctrl group (E), except for the 4th ability ('D'). Most casters that I tend
+;to put in ctrl group 3 have a non-time-sensitive ability in that spot for this reason
+;The 'D' ability key could instead be moved such that it is hit with the pinky rather than ring finger, for example, it could be on 'Z'. However, the comfort of 'D' over 'Z', especially when
+;casting multiple abilities in a row, won out
+;;;;;Item hotkeys follow a similar rationale as ability hotkeys -- None of them are executed with the pointer finger, 
+;since you often want to hit a hero hotkey with pointer finger and then hit an item quickly
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; META HOTKEYS (PAUSING, RESOURCE TRADING, ETC) ;;;;;;;
@@ -146,8 +151,8 @@ return
 ;;;; * is necessary here to preserve modifiers (whereas that happens automatically with the Key & Key combinations used in the macro ctrl groups)
 *Space::SendKeyWithRemappedModifier("1")
 *F::SendKeyWithRemappedModifier("2")
-*W::SendKeyWithRemappedModifier("3")
-*Y::SendKeyWithRemappedModifier("4")
+*E::SendKeyWithRemappedModifier("3")
+*4::SendKeyWithRemappedModifier("4")
 *5::SendKeyWithRemappedModifier("5")
 
 ;;;;;;Macro ctrl groups --- ensure setting them works with shift and adding with Alt
@@ -155,7 +160,7 @@ Right & Space::SendKeyWithRemappedModifier("6")
 Right & T::SendKeyWithRemappedModifier("7")
 Right & G::SendKeyWithRemappedModifier("8")
 Right & 4::SendKeyWithRemappedModifier("9")
-Right & Y::SendKeyWithRemappedModifier("0")
+Right & 5::SendKeyWithRemappedModifier("0")
 
 ;;;;;; Hero hotkeys
 *R::Send, {F1}
@@ -208,25 +213,23 @@ Left & Z::Send, {Numpad2}
 ;;; When Back mouse button is held, Map keys to other side of the keyboard
 ;;; Note that not all keys actually need to be remapped, since some keys already work fine when being used for both micro and macro (like unit ability keys also being used to build units)
 ;;; So, for convenience, those keys are not remapped, and will just work for both micro and macro situations, whether or not the 'macro' modifier key is held
-Right & W::Send, u
+Right & E::Send, u
 Right & R::Send, i
 Right & F::Send, o
 Right & X::Send, n
-Right & Q::Send, p
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; SIMPLE REBINDS TO GET AROUND HARD-CODED / UNBINDABLE KEYS ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;;;;; Make 3 send shift. This is useful for shift queueing attack/move/patrol commands
+*3::Shift
+
 ;;;;;; Make DPI mouse button function as Tab for cycling through units / buildings
-;;;;;; Same with Q (using send syntax for Q because remap wasn't working for some reason)
 ;;;;;; Note that my Logitech GHub binds it to 0, that's why 0 is used here
 ;;;;;; A different key may be needed depending on your mouse settings
 0::Tab
-Q::
-Send, {Tab} 
-return
 
 ;;;;;; Make mouse wheel middle button click send K to be a useable key
 MButton::
@@ -248,9 +251,6 @@ return
 X & LButton::
 Send !{LButton}
 return
-
-;;;;;; Make '3' a useable key for binding
-3::b
 
 ;;;;;; Make alt function as ctrl for subgroup order modifier key (useful for destro micro w/ statues and sending ghoul to lumber at start of game)
 !RButton::

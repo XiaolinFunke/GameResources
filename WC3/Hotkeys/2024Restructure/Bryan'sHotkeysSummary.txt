@@ -1,8 +1,8 @@
 Unit hotkeys:
 1: Space  (usually melee)
 2: F      (usually ranged)
-3: W      (usually casters/siege/air)    
-4: Y      (Hit squad / utility unit)
+3: E      (usually casters/siege/air)
+4: 4      (Hit squad / utility unit)
 5: 5      (Hit squad / utility unit)
 
 Hero hotkeys:
@@ -15,10 +15,10 @@ Macro hotkeys:
 7: MB + T          (Main)
 8: MB + G          (Upgrade building)
 9: MB + 4          (Altar)
-0: MB + Y          (Lumber peons / peasants / ghouls / AoW? / wisps?)
+0: MB + 5          (Lumber peons / peasants / ghouls / AoW? / wisps?)
 
 Ability hotkeys:
-A S E D
+A W S D
 
 Inventory Hotkeys:
 Front mouse button + key
@@ -26,21 +26,22 @@ E D
 W S   
 A Z   
 
-(TP)                   (Scroll of healing)
-(Invuln / healing pot)   (Staff, Scroll of speed)
-(Mana pot)   (Scroll of protection)
+(TP)   (Scroll of healing)           
+(Scroll of protection)  (Staff, Scroll of speed)
+(Invuln / healing pot)  (Mana pot)   
 
 
 Basic hotkeys:
 Atk: Caps lock
 Patrol: H
 Move: V
-Hold position: 3
+Hold position: Q
 Stop: Mouse wheel down and up (for spamming)
 Tab between unit/building types: Tab OR Mouse DPI button
-'4' Also sends shift, for shift -- for shift + attack, shift + patrol
+'3' Also sends shift, for shift -- for shift + attack, shift + patrol
 Uproot / reroot, Hide/Shadowmeld: C
 Beacon: X
+Cancel: Z
 
 Subgroup Order Modifier Key or add to control group:
 Alt
@@ -53,5 +54,8 @@ Shift
 
 W3Champions hotkey setting works well except:
 Can't move build or rally icons because it doesn't know about the special entries needed
+No way to rebind ice troll merc camps
 It always adds extra entries for tier3 main upgrades which means that key doesn't get rebound properly unless you remove those
+It also has an extra entry for purge that doesn't get changed
 It doesn't allow you to move the icon of some passives like spell immunity, elune's grace, etc. which have special entries in the customkeys
+Make sure all the different 'cancel' keys are the same as well

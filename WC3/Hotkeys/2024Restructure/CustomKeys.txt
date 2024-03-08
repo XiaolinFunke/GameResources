@@ -1,12 +1,12 @@
 [cmdbuild]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
 
 // Build Structure
 [cmdbuildhuman]
-Hotkey=E
+Hotkey=W
 // This entry is necessary to change the icon placement of the build cmd
 [AHbu]
 Buttonpos=2,2
@@ -14,7 +14,7 @@ Buttonpos=2,2
 
 // Build Structure
 [cmdbuildorc]
-Hotkey=E
+Hotkey=W
 // This entry is necessary to change the icon placement of the build cmd
 [AObu]
 Buttonpos=2,2
@@ -22,7 +22,7 @@ Buttonpos=2,2
 
 // Create Building
 [cmdbuildnightelf]
-Hotkey=E
+Hotkey=W
 // This entry is necessary to change the icon placement of the build cmd
 [AEbu]
 Buttonpos=2,2
@@ -30,7 +30,7 @@ Buttonpos=2,2
 
 // Summon Building
 [cmdbuildundead]
-Hotkey=E
+Hotkey=W
 // This entry is necessary to change the icon placement of the build cmd
 [AUbu]
 Buttonpos=2,2
@@ -51,7 +51,7 @@ UnButtonpos=0,2
 
 
 [sloa]
-Hotkey=E
+Hotkey=W
 
 
 [sdro]
@@ -60,26 +60,26 @@ Hotkey=R
 
 // Train Priest
 [hmpr]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Dispel Magic
 [adis]
-Hotkey=E
+Hotkey=W
 
 
 // Train Mortar Team
 [hmtm]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Call to Arms
 [amic]
-Hotkey=E
+Hotkey=W
 Unhotkey=D
 Buttonpos=2,0
 UnButtonpos=2,0
@@ -87,7 +87,7 @@ UnButtonpos=2,0
 
 // Train Rifleman
 [hrif]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -100,21 +100,21 @@ UnButtonpos=3,0
 
 // Train Gryphon Rider
 [hgry]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Upgrade to Cannon Tower
 [hctw]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Summon Mountain King
 [hmkg]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -128,7 +128,7 @@ UnButtonpos=1,2
 
 // Disenchant
 [adcn]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -138,17 +138,17 @@ Hotkey=Q
 Buttonpos=0,2
 UnButtonpos=0,2
 
-
+// Reinforced burrows
 [orbr]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Mirror Image
 [aomi]
-Hotkey=E
-Researchhotkey=E
+Hotkey=W
+Researchhotkey=W
 Researchbuttonpos=2,0
 Buttonpos=2,2
 UnButtonpos=2,2
@@ -156,8 +156,8 @@ UnButtonpos=2,2
 
 // Feral Spirit
 [aosf]
-Hotkey=E
-Researchhotkey=E
+Hotkey=W
+Researchhotkey=W
 Researchbuttonpos=2,0
 Buttonpos=2,2
 UnButtonpos=2,2
@@ -165,8 +165,8 @@ UnButtonpos=2,2
 
 // Healing Wave
 [aohw]
-Hotkey=E
-Researchhotkey=E
+Hotkey=W
+Researchhotkey=W
 Researchbuttonpos=2,0
 Buttonpos=2,2
 UnButtonpos=2,2
@@ -174,8 +174,8 @@ UnButtonpos=2,2
 
 // War Stomp
 [aows]
-Hotkey=E
-Researchhotkey=E
+Hotkey=W
+Researchhotkey=W
 Researchbuttonpos=2,0
 Buttonpos=2,2
 UnButtonpos=2,2
@@ -189,56 +189,56 @@ UnButtonpos=3,2
 
 // Train Druid of the Talon
 [edot]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
-
+// Faerie fire (crow form)
 [afa2]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
 
 // Train Huntress
 [esen]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Sentinel
 [aesn]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
 
 // Mount Hippogryph
 [aco2]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
 
 // Dismount Archer
 [adec]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
 
 // Abolish Magic
 [aadm]
-Hotkey=E
-Unhotkey=E
+Hotkey=W
+Unhotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
 
 // Pick up Archer
 [aco3]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -272,7 +272,7 @@ UnButtonpos=1,1
 
 // Eat Tree
 [aeat]
-Hotkey=E
+Hotkey=W
 Buttonpos=2,2
 UnButtonpos=2,2
 
@@ -283,31 +283,28 @@ Buttonpos=0,0
 UnButtonpos=0,0
 
 
-[aenc]
-Hotkey=E
-
-
 // Summon Demon Hunter
 [edem]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Train Abomination
 [uabo]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Train Banshee
 [uban]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
+// Anti-magic shell
 [aams]
 Hotkey=E
 Buttonpos=2,2
@@ -552,14 +549,14 @@ UnButtonpos=2,0
 
 
 [nbot]
-Hotkey=Q
+Hotkey=U
 Buttonpos=0,0
 UnButtonpos=0,0
 
 
 // Summon Mud Golem
 [ngrk]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -577,7 +574,7 @@ UnButtonpos=1,0
 
 
 [nmsn]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -618,12 +615,6 @@ Buttonpos=1,0
 UnButtonpos=1,0
 
 
-[ngrd]
-Hotkey=E
-Buttonpos=2,0
-UnButtonpos=2,0
-
-
 [nkob]
 Hotkey=W
 Buttonpos=1,0
@@ -634,12 +625,6 @@ UnButtonpos=1,0
 Hotkey=Q
 Buttonpos=0,0
 UnButtonpos=0,0
-
-
-[nkog]
-Hotkey=E
-Buttonpos=2,0
-UnButtonpos=2,0
 
 
 [nmrr]
@@ -977,7 +962,7 @@ Hotkey=V
 
 
 [ane2]
-Hotkey=U
+Hotkey=W
 
 
 [anin]
@@ -1188,10 +1173,6 @@ UnButtonpos=1,2
 Hotkey=L
 
 
-[sloa]
-Hotkey=L
-
-
 [slo3]
 Hotkey=L
 
@@ -1245,7 +1226,7 @@ Hotkey=L
 
 
 [acuf]
-Hotkey=U
+Hotkey=W
 
 
 [awrh]
@@ -1748,7 +1729,7 @@ UnButtonpos=3,0
 
 // Build War Mill
 [ofor]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -1817,7 +1798,7 @@ UnButtonpos=1,1
 
 // Research Troll Regeneration
 [rotr]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -1903,7 +1884,7 @@ UnButtonpos=2,0
 
 // Shaman Training
 [rost]
-Hotkey=U,U,U
+Hotkey=W,W,W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -1931,7 +1912,7 @@ UnButtonpos=2,0
 
 // Research Ensnare
 [roen]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -1966,7 +1947,7 @@ UnButtonpos=1,1
 
 // Upgrade Pulverize
 [rows]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2003,7 +1984,7 @@ UnButtonpos=2,0
 
 // Summon Pandaren Brewmaster
 [npbm]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2127,7 +2108,7 @@ UnButtonpos=1,1
 
 // Research Defend
 [rhde]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2218,7 +2199,7 @@ UnButtonpos=0,1
 
 // Sorceress Training
 [rhst]
-Hotkey=U,U,U
+Hotkey=W,W,W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2259,7 +2240,7 @@ UnButtonpos=1,2
 
 // Research Flak Cannons
 [rhfc]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2414,7 +2395,7 @@ UnButtonpos=1,1
 
 // Build Blacksmith
 [hbla]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2506,7 +2487,7 @@ UnButtonpos=2,2
 
 // Summon Graveyard
 [ugrv]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2693,7 +2674,7 @@ UnButtonpos=2,2
 
 // Research Ghoul Frenzy
 [rugf]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2756,7 +2737,7 @@ UnButtonpos=1,1
 
 // Necromancer Training
 [rune]
-Hotkey=U,U,U
+Hotkey=W,W,W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2784,7 +2765,7 @@ UnButtonpos=0,1
 
 // Research Exhume Corpsesg
 [ruex]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2798,7 +2779,7 @@ UnButtonpos=1,1
 
 // Train Frost Wyrm
 [ufro]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -2925,7 +2906,7 @@ UnButtonpos=3,0
 
 // Create Hunter’s Hall
 [edob]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -2939,7 +2920,7 @@ UnButtonpos=0,1
 
 // Create Moon Well
 [emow]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -3052,7 +3033,7 @@ UnButtonpos=2,2
 
 // Research Nature’s Blessing
 [renb]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -3114,7 +3095,7 @@ UnButtonpos=2,2
 
 // Research Improved Bows
 [reib]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -3135,14 +3116,14 @@ UnButtonpos=1,1
 
 // Upgrade Strength of the Wild
 [resw]
-Hotkey=E,E,E
+Hotkey=U,E,E
 Buttonpos=2,0
 UnButtonpos=2,0
 
 
 // Research Ultravision
 [reuv]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -3185,14 +3166,14 @@ UnButtonpos=1,1
 
 // Research Hardened Skin
 [rehs]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
 
 // Train Druid of the Claw
 [edoc]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -3227,7 +3208,7 @@ UnButtonpos=2,2
 
 // Train Chimaera
 [echm]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -3376,7 +3357,7 @@ UnButtonpos=0,1
 
 // Purchase Circlet of Nobility
 [cnob]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -3404,7 +3385,7 @@ UnButtonpos=3,0
 
 // Purchase Scroll of Speed
 [shas]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -3418,7 +3399,7 @@ UnButtonpos=2,2
 
 // Purchase Mechanical Critter
 [mcri]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -3453,7 +3434,7 @@ UnButtonpos=3,0
 
 // Purchase Sacrificial Skull
 [skul]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -3481,14 +3462,14 @@ UnButtonpos=2,2
 
 // Purchase Dust of Appearance
 [dust]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
 
 // Purchase Lesser Clarity Potion
 [plcl]
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 UnButtonpos=2,0
 
@@ -3700,12 +3681,6 @@ Buttonpos=0,0
 UnButtonpos=0,0
 
 
-[nkog]
-Hotkey=E
-Buttonpos=2,0
-UnButtonpos=2,0
-
-
 [nmrr]
 Hotkey=R
 Buttonpos=3,0
@@ -3796,12 +3771,6 @@ UnButtonpos=1,0
 Hotkey=Q
 Buttonpos=0,0
 UnButtonpos=0,0
-
-
-[nkog]
-Hotkey=E
-Buttonpos=2,0
-UnButtonpos=2,0
 
 
 [nmrr]
@@ -3933,7 +3902,7 @@ UnButtonpos=3,1
 
 // Research Cloud
 [rhcd]
-Hotkey=U
+Hotkey=W
 Buttonpos=1,0
 UnButtonpos=1,0
 
@@ -4777,7 +4746,7 @@ Buttonpos=0,0
 
 [nkog]
 Tip=Hire Kobold Geomancer (|cffffcc00E|r)
-Hotkey=E
+Hotkey=U
 Buttonpos=2,0
 
 [nmrr]
