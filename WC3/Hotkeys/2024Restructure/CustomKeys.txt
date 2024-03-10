@@ -11,6 +11,10 @@ Tip=Research Backpack (|cffffcc00A|r)
 [cmdrally]
 Hotkey=J
 Buttonpos=3,2
+// This entry is necessary to change the rally point icon position
+// 0,-11 is a trick to make it not show up at all
+[ARal]
+Buttonpos=0,-11
 
 [ostr]
 Buttonpos=3,1
