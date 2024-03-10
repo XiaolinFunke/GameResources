@@ -512,16 +512,16 @@ Hotkey=W
 Tip=Spirit Link (|cffffcc00W|r)
 
 [acpf]
-Buttonpos=0,2
-Unbuttonpos=0,2
-Hotkey=A
-Unhotkey=A
+Buttonpos=3,2
+Unbuttonpos=3,2
+Hotkey=D
+Unhotkey=D
 Tip=Corporeal Form (|cffffcc00A|r)
 Untip=Ethereal Form (|cffffcc00A|r)
 
 [aast]
-Buttonpos=3,2
-Hotkey=D
+Buttonpos=0,2
+Hotkey=A
 Tip=Ancestral Spirit (|cffffcc00D|r)
 
 [adcn]
