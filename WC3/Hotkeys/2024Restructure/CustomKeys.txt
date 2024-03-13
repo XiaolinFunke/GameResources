@@ -17,9 +17,9 @@ Buttonpos=3,2
 Buttonpos=0,-11
 
 [ostr]
-Buttonpos=3,1
-Hotkey=O
-Tip=Upgrade to Stronghold (|cffffcc00O|r)
+Buttonpos=2,1
+Hotkey=D
+Tip=Upgrade to Stronghold (|cffffcc00D|r)
 
 [cmdcancelbuild]
 Buttonpos=3,1
@@ -34,8 +34,8 @@ Hotkey=U
 Tip=Pillage (|cffffcc00U|r)
 
 [ofrt]
-Buttonpos=3,1
-Hotkey=O
+Buttonpos=2,1
+Hotkey=D
 Tip=Upgrade to Fortress (|cffffcc00O|r)
 
 [ocat]
@@ -79,14 +79,14 @@ Hotkey=S
 Tip=Train Troll Berserker (|cffffcc00S|r)
 
 [rome]
-Buttonpos=2,1
-Hotkey=D,D,D
-Tip=Upgrade to Steel Melee Weapons (|cffffcc00D|r),Upgrade to Thorium Melee Weapons (|cffffcc00D|r),Upgrade to Arcanite Melee Weapons (|cffffcc00D|r)
+Buttonpos=1,1
+Hotkey=S,S,S
+Tip=Upgrade to Steel Melee Weapons (|cffffcc00S|r),Upgrade to Thorium Melee Weapons (|cffffcc00S|r),Upgrade to Arcanite Melee Weapons (|cffffcc00S|r)
 
 [roar]
-Buttonpos=3,0
-Hotkey=I,I,I
-Tip=Upgrade to Steel Unit Armor (|cffffcc00I|r),Upgrade to Thorium Unit Armor (|cffffcc00I|r),Upgrade to Arcanite Unit Armor (|cffffcc00I|r)
+Buttonpos=2,0
+Hotkey=U,U,U
+Tip=Upgrade to Steel Unit Armor (|cffffcc00U|r),Upgrade to Thorium Unit Armor (|cffffcc00U|r),Upgrade to Arcanite Unit Armor (|cffffcc00U|r)
 
 [rosp]
 Buttonpos=0,0
@@ -94,9 +94,9 @@ Hotkey=Q,Q,Q
 Tip=Upgrade to Spiked Barricades (|cffffcc00Q|r),Upgrade to Improved Spiked Barricades (|cffffcc00Q|r),Upgrade to Advanced Spiked Barricades (|cffffcc00Q|r)
 
 [rora]
-Hotkey=U,U,U
-Tip=Upgrade to Steel Ranged Weapons (|cffffcc00U|r),Upgrade to Thorium Ranged Weapons (|cffffcc00U|r),Upgrade to Arcanite Ranged Weapons (|cffffcc00U|r)
-Buttonpos=2,0
+Hotkey=W,W,W
+Tip=Upgrade to Steel Ranged Weapons (|cffffcc00W|r),Upgrade to Thorium Ranged Weapons (|cffffcc00W|r),Upgrade to Arcanite Ranged Weapons (|cffffcc00W|r)
+Buttonpos=1,0
 
 [cmdattack]
 Hotkey=L
@@ -1305,15 +1305,15 @@ Buttonpos=0,1
 Hotkey=A
 
 [etoa]
-Buttonpos=3,1
-Hotkey=O
+Buttonpos=2,1
+Hotkey=D
 
 [renb]
 Hotkey=U
 
 [etoe]
-Buttonpos=3,1
-Hotkey=O
+Buttonpos=2,1
+Hotkey=D
 
 [slo2]
 Hotkey=W
@@ -1360,9 +1360,9 @@ Buttonpos=1,0
 Hotkey=W
 
 [rerh]
-Buttonpos=3,1
-Hotkey=O,O,O
-Tip=Upgrade to Reinforced Hides (|cffffcc00O|r),Upgrade to Improved Reinforced Hides (|cffffcc00O|r),Upgrade to Advanced Reinforced Hides (|cffffcc00O|r)
+Buttonpos=2,1
+Hotkey=D,D,D
+Tip=Upgrade to Reinforced Hides (|cffffcc00D|r),Upgrade to Improved Reinforced Hides (|cffffcc00D|r),Upgrade to Advanced Reinforced Hides (|cffffcc00D|r)
 
 [rews]
 Buttonpos=0,0
@@ -1370,24 +1370,24 @@ Hotkey=Q
 Tip=Research Well Spring (|cffffcc00Q|r)
 
 [resw]
-Buttonpos=3,0
-Hotkey=I,I,I
-Tip=Upgrade to Strength of the Wild (|cffffcc00I|r),Upgrade to Improved Strength of the Wild (|cffffcc00I|r),Upgrade to Advanced Strength of the Wild (|cffffcc00I|r)
+Buttonpos=2,0
+Hotkey=U,U,U
+Tip=Upgrade to Strength of the Wild (|cffffcc00U|r),Upgrade to Improved Strength of the Wild (|cffffcc00U|r),Upgrade to Advanced Strength of the Wild (|cffffcc00U|r)
 
 [rema]
-Buttonpos=2,1
-Hotkey=D,D,D
-Tip=Upgrade to Moon Armor (|cffffcc00D|r),Upgrade to Improved Moon Armor (|cffffcc00D|r),Upgrade to Advanced Moon Armor (|cffffcc00D|r)
+Buttonpos=1,1
+Hotkey=S,S,S
+Tip=Upgrade to Moon Armor (|cffffcc00S|r),Upgrade to Improved Moon Armor (|cffffcc00S|r),Upgrade to Advanced Moon Armor (|cffffcc00S|r)
 
 [reuv]
-Buttonpos=1,0
-Hotkey=W
+Buttonpos=0,1
+Hotkey=A
 Tip=Upgrade to Ultravision (|cffffcc00W|r)
 
 [resm]
-Buttonpos=2,0
-Hotkey=U,U,U
-Tip=Upgrade to Strength of the Moon (|cffffcc00U|r),Upgrade to Improved Strength of the Moon (|cffffcc00U|r),Upgrade to Advanced Strength of the Moon (|cffffcc00U|r)
+Buttonpos=1,0
+Hotkey=W,W,W
+Tip=Upgrade to Strength of the Moon (|cffffcc00W|r),Upgrade to Improved Strength of the Moon (|cffffcc00W|r),Upgrade to Advanced Strength of the Moon (|cffffcc00W|r)
 
 [aro2]
 Buttonpos=2,2
@@ -1524,9 +1524,9 @@ Hotkey=N
 Tip=Purchase Anti-magic Potion (|cffffcc00N|r)
 
 [rorb]
-Tip=Reinforced Defenses (|cffffcc00W|r)
-Buttonpos=1,0
-Hotkey=W
+Tip=Reinforced Defenses (|cffffcc00A|r)
+Buttonpos=0,1
+Hotkey=A
 
 [anc1]
 Buttonpos=2,2
@@ -1846,21 +1846,21 @@ Hotkey=S
 Tip=Rejuvenation (|cffffcc00S|r)
 
 [abrf]
-Buttonpos=0,2
-Unbuttonpos=0,2
-Hotkey=A
-Tip=Bear Form (|cffffcc00A|r)
-Unhotkey=A
-Untip=Night Elf Form (|cffffcc00A|r)
+Buttonpos=3,2
+Unbuttonpos=3,2
+Hotkey=D
+Tip=Bear Form (|cffffcc00D|r)
+Unhotkey=D
+Untip=Night Elf Form (|cffffcc00D|r)
 
 [aroa]
-Buttonpos=3,2
-Hotkey=D
-Tip=Roar (|cffffcc00D|r)
+Buttonpos=0,2
+Hotkey=A
+Tip=Roar (|cffffcc00A|r)
 
 [ara2]
-Buttonpos=1,2
-Hotkey=W
+Buttonpos=0,2
+Hotkey=A
 Tip=Roar (|cffffcc00W|r)
 
 [assk]
