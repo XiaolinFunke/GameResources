@@ -123,12 +123,12 @@ else
 return
 
 ;;;;;; For pausing and unpausing quickly
-*F5::
+*6::
 Send {F10}m{F10}
 return
 
-;;;;;; For resource trading F4 instead of F11 and F4 also closes the menu (usually it would just open it and enter to close)
-*F4::
+;;;;;; For resource trading - Y instead of F11. Y also closes the menu (usually it would just open it and enter to close)
+*Y::
 if (InResourceMenu == False)
 {
   InResourceMenu := True
