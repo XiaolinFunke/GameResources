@@ -42,6 +42,8 @@ Tab between unit/building types: Tab OR Mouse DPI button
 Uproot / reroot, Hide/Shadowmeld: C
 Beacon: X
 Cancel: Z
+Open ally menu / send resources (for resource trading): Y
+Pause/unpause game: 6
 
 Subgroup Order Modifier Key or add to control group:
 Alt
