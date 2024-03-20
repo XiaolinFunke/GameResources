@@ -11,14 +11,42 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
 menu, tray, Icon, %War%, 1, 1 
 
-;;;COMMENTED FOR TESTING
 ;;;;; Hotkeys ;;;;;
 #ifWinActive, Warcraft III ;*new to ver 1.0.41.00* only run when war3 is running
 
-;;;;; Variables ;;;;;
+;;;;; Configurable Variables ;;;;;
+;;; Due to Logitech GHub, my mouse buttons send these keys -- modify for your own situation
+;;; Need quotes around these because they are used in key combinations (%var% & Y)
+FrontMouseButtonKey := "Left"
+BackMouseButtonKey := "Right"
+DPIMouseButtonKey := "0"
+
+;;;;; Other Variables ;;;;;
 InChatRoomOn := False
 InResourceMenu := False
 
+;;;;; HotKey commands ;;;;;
+;HotKey commands must be at the top of the script (in the script's auto-execute section)
+;HotKey is used in these cases rather than more conventional remapping techniques, since we need the triggering key to be a variable
+HotKey, %BackMouseButtonKey% & Space, MacroHotkey1Handler
+HotKey, %BackMouseButtonKey% & T, MacroHotkey2Handler
+HotKey, %BackMouseButtonKey% & G, MacroHotkey3Handler
+HotKey, %BackMouseButtonKey% & 4, MacroHotkey4Handler
+HotKey, %BackMouseButtonKey% & 5, MacroHotkey5Handler
+
+HotKey, %BackMouseButtonKey% & E, MacroEHandler
+HotKey, %BackMouseButtonKey% & R, MacroRHandler
+HotKey, %BackMouseButtonKey% & F, MacroFHandler
+HotKey, %BackMouseButtonKey% & X, MacroXHandler
+
+HotKey, %FrontMouseButtonKey% & E, Inventory1Handler
+HotKey, %FrontMouseButtonKey% & D, Inventory2Handler
+HotKey, %FrontMouseButtonKey% & W, Inventory3Handler
+HotKey, %FrontMouseButtonKey% & S, Inventory4Handler
+HotKey, %FrontMouseButtonKey% & A, Inventory5Handler
+HotKey, %FrontMouseButtonKey% & Z, Inventory6Handler
+
+HotKey, %DPIMouseButtonKey%, DPIMouseButtonHandler
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; EXPLANATION OF HOTKEYS ;;;;;;;
@@ -142,7 +170,6 @@ else
 return
 
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; CTRL GROUP HOTKEYS ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -156,11 +183,21 @@ return
 *5::SendKeyWithRemappedModifier("5")
 
 ;;;;;;Macro ctrl groups --- ensure setting them works with shift and adding with Alt
-Right & Space::SendKeyWithRemappedModifier("6")
-Right & T::SendKeyWithRemappedModifier("7")
-Right & G::SendKeyWithRemappedModifier("8")
-Right & 4::SendKeyWithRemappedModifier("9")
-Right & 5::SendKeyWithRemappedModifier("0")
+MacroHotkey1Handler:
+SendKeyWithRemappedModifier("6")
+return
+MacroHotkey2Handler:
+SendKeyWithRemappedModifier("7")
+return
+MacroHotkey3Handler:
+SendKeyWithRemappedModifier("8")
+return
+MacroHotkey4Handler:
+SendKeyWithRemappedModifier("9")
+return
+MacroHotkey5Handler:
+SendKeyWithRemappedModifier("0")
+return
 
 ;;;;;; Hero hotkeys
 *R::Send, {F1}
@@ -191,17 +228,28 @@ SendKeyWithRemappedModifier(keyToSend)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;Front mouse button + ability hotkeys send inventory keys
-;;;;;;(Front side mouse button, which for me is Left Arrow Key for me due to Logitech Ghub)
 ; Arrangement is like so:
 ; E D
 ; W S
 ; A Z
-Left & E::Send, {Numpad7}
-Left & W::Send, {Numpad4}
-Left & A::Send, {Numpad1}
-Left & D::Send, {Numpad8}
-Left & S::Send, {Numpad5}
-Left & Z::Send, {Numpad2}
+Inventory1Handler:
+Send, {Numpad7}
+return
+Inventory2Handler:
+Send, {Numpad8}
+return
+Inventory3Handler:
+Send, {Numpad4}
+return
+Inventory4Handler:
+Send, {Numpad5}
+return
+Inventory5Handler:
+Send, {Numpad1}
+return
+Inventory6Handler:
+Send, {Numpad2}
+return
 
 
 
@@ -213,10 +261,18 @@ Left & Z::Send, {Numpad2}
 ;;; When Back mouse button is held, Map keys to other side of the keyboard
 ;;; Note that not all keys actually need to be remapped, since some keys already work fine when being used for both micro and macro (like unit ability keys also being used to build units)
 ;;; So, for convenience, those keys are not remapped, and will just work for both micro and macro situations, whether or not the 'macro' modifier key is held
-Right & E::Send, u
-Right & R::Send, i
-Right & F::Send, o
-Right & X::Send, n
+MacroEHandler:
+Send, u
+return
+MacroRHandler:
+Send, i
+return
+MacroFHandler:
+Send, o
+return
+MacroXHandler:
+Send, n
+return
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -227,9 +283,9 @@ Right & X::Send, n
 *3::Shift
 
 ;;;;;; Make DPI mouse button function as Tab for cycling through units / buildings
-;;;;;; Note that my Logitech GHub binds it to 0, that's why 0 is used here
-;;;;;; A different key may be needed depending on your mouse settings
-0::Tab
+DPIMouseButtonHandler:
+Send {Tab}
+return
 
 ;;;;;; Make mouse wheel middle button click send K to be a useable key
 MButton::
