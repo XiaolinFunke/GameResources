@@ -28,25 +28,10 @@ InResourceMenu := False
 ;;;;; HotKey commands ;;;;;
 ;HotKey commands must be at the top of the script (in the script's auto-execute section)
 ;HotKey is used in these cases rather than more conventional remapping techniques, since we need the triggering key to be a variable
-HotKey, %BackMouseButtonKey% & Space, MacroHotkey1Handler
-HotKey, %BackMouseButtonKey% & T, MacroHotkey2Handler
-HotKey, %BackMouseButtonKey% & G, MacroHotkey3Handler
-HotKey, %BackMouseButtonKey% & 4, MacroHotkey4Handler
-HotKey, %BackMouseButtonKey% & 5, MacroHotkey5Handler
-
-HotKey, %BackMouseButtonKey% & E, MacroEHandler
-HotKey, %BackMouseButtonKey% & R, MacroRHandler
-HotKey, %BackMouseButtonKey% & F, MacroFHandler
-HotKey, %BackMouseButtonKey% & X, MacroXHandler
-
-HotKey, %FrontMouseButtonKey% & E, Inventory1Handler
-HotKey, %FrontMouseButtonKey% & D, Inventory2Handler
-HotKey, %FrontMouseButtonKey% & W, Inventory3Handler
-HotKey, %FrontMouseButtonKey% & S, Inventory4Handler
-HotKey, %FrontMouseButtonKey% & A, Inventory5Handler
-HotKey, %FrontMouseButtonKey% & Z, Inventory6Handler
-
 HotKey, %DPIMouseButtonKey%, DPIMouseButtonHandler
+setMacroCtrlGroupHotkeys()
+setMacroModeRemappings()
+setInventoryHotkeys()
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; EXPLANATION OF HOTKEYS ;;;;;;;
@@ -176,27 +161,36 @@ return
 
 ;;;; Micro control groups - ensure setting them works with shift and adding with Alt
 ;;;; * is necessary here to preserve modifiers (whereas that happens automatically with the Key & Key combinations used in the macro ctrl groups)
-*Space::SendKeyWithRemappedModifier("1")
-*F::SendKeyWithRemappedModifier("2")
-*E::SendKeyWithRemappedModifier("3")
-*4::SendKeyWithRemappedModifier("4")
-*5::SendKeyWithRemappedModifier("5")
+*Space::sendKeyWithRemappedModifier("1")
+*F::sendKeyWithRemappedModifier("2")
+*E::sendKeyWithRemappedModifier("3")
+*4::sendKeyWithRemappedModifier("4")
+*5::sendKeyWithRemappedModifier("5")
 
 ;;;;;;Macro ctrl groups --- ensure setting them works with shift and adding with Alt
+setMacroCtrlGroupHotkeys()
+{
+  Global BackMouseButtonKey
+  HotKey, %BackMouseButtonKey% & Space, MacroHotkey1Handler
+  HotKey, %BackMouseButtonKey% & T, MacroHotkey2Handler
+  HotKey, %BackMouseButtonKey% & G, MacroHotkey3Handler
+  HotKey, %BackMouseButtonKey% & 4, MacroHotkey4Handler
+  HotKey, %BackMouseButtonKey% & 5, MacroHotkey5Handler
+}
 MacroHotkey1Handler:
-SendKeyWithRemappedModifier("6")
+sendKeyWithRemappedModifier("6")
 return
 MacroHotkey2Handler:
-SendKeyWithRemappedModifier("7")
+sendKeyWithRemappedModifier("7")
 return
 MacroHotkey3Handler:
-SendKeyWithRemappedModifier("8")
+sendKeyWithRemappedModifier("8")
 return
 MacroHotkey4Handler:
-SendKeyWithRemappedModifier("9")
+sendKeyWithRemappedModifier("9")
 return
 MacroHotkey5Handler:
-SendKeyWithRemappedModifier("0")
+sendKeyWithRemappedModifier("0")
 return
 
 ;;;;;; Hero hotkeys
@@ -206,7 +200,7 @@ return
 
 ;;;; Since some ctrl group hotkeys are already triggered using 2 keys in combination, and 3 key combinations are not supported by autohotkey,
 ;;;; Use this function to have shift function as Ctrl for setting ctrl groups and Alt function as shift for Ctrl group adding
-SendKeyWithRemappedModifier(keyToSend)
+sendKeyWithRemappedModifier(keyToSend)
 {
   if (GetKeyState("Shift")) or (GetKeyState("Shift"), "P") {
     ;;;; Don't need to release shift, since, in WC3, Shift + Ctrl + hotkey SETS the control group rather than adding to it (unlike in dota2)
@@ -232,6 +226,16 @@ SendKeyWithRemappedModifier(keyToSend)
 ; E D
 ; W S
 ; A Z
+setInventoryHotkeys()
+{
+  Global FrontMouseButtonKey
+  HotKey, %FrontMouseButtonKey% & E, Inventory1Handler
+  HotKey, %FrontMouseButtonKey% & D, Inventory2Handler
+  HotKey, %FrontMouseButtonKey% & W, Inventory3Handler
+  HotKey, %FrontMouseButtonKey% & S, Inventory4Handler
+  HotKey, %FrontMouseButtonKey% & A, Inventory5Handler
+  HotKey, %FrontMouseButtonKey% & Z, Inventory6Handler
+}
 Inventory1Handler:
 Send, {Numpad7}
 return
@@ -261,6 +265,14 @@ return
 ;;; When Back mouse button is held, Map keys to other side of the keyboard
 ;;; Note that not all keys actually need to be remapped, since some keys already work fine when being used for both micro and macro (like unit ability keys also being used to build units)
 ;;; So, for convenience, those keys are not remapped, and will just work for both micro and macro situations, whether or not the 'macro' modifier key is held
+setMacroModeRemappings()
+{
+  Global BackMouseButtonKey
+  HotKey, %BackMouseButtonKey% & E, MacroEHandler
+  HotKey, %BackMouseButtonKey% & R, MacroRHandler
+  HotKey, %BackMouseButtonKey% & F, MacroFHandler
+  HotKey, %BackMouseButtonKey% & X, MacroXHandler
+}
 MacroEHandler:
 Send, u
 return
