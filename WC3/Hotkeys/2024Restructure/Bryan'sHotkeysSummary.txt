@@ -10,12 +10,13 @@ Hero hotkeys:
 2nd: T
 3rd: G
 
+BMB = Back Mouse Button
 Macro hotkeys:
-6: MB + Space      (Main production buildings)
-7: MB + T          (Main)
-8: MB + G          (Upgrade building)
-9: MB + 4          (Altar)
-0: MB + 5          (Lumber peons / peasants / ghouls / moon wells / wisps?)
+6: BMB + Space      (Main production buildings)
+7: BMB + T          (Main)
+8: BMB + G          (Upgrade building)
+9: BMB + 4          (Altar)
+0: BMB + 5          (Lumber peons / peasants / ghouls / moon wells / wisps?)
 
 Ability hotkeys:
 A W S D
@@ -26,6 +27,7 @@ E D
 W S   
 A Z   
 
+I usually store items roughly like this:
 (TP)   (Scroll of healing)           
 (Scroll of protection)  (Staff, Scroll of speed)
 (Invuln / healing pot)  (Mana pot)   
@@ -38,12 +40,13 @@ Move: V
 Hold position: Q
 Stop: Mouse wheel down and up (for spamming)
 Tab between unit/building types: Tab OR Mouse DPI button
-'3' Also sends shift, for shift -- for shift + attack, shift + patrol
+'3' Also sends shift, useful for shift + attack or shift + patrol
 Uproot / reroot, Hide/Shadowmeld: C
 Beacon: X
 Cancel: Z
 Open ally menu / send resources (for resource trading): Y
 Pause/unpause game: 6
+Learn ability on hero: Middle mouse button
 
 Subgroup Order Modifier Key or add to control group:
 Alt
@@ -62,5 +65,5 @@ It also has an extra entry for purge that doesn't get changed
 It doesn't allow you to move the icon of some passives like spell immunity, elune's grace, etc. which have special entries in the customkeys
 Some of these issues might be due to me starting with a non-W3champions-generated customkeys file, but in general, the site I found works better
 
-Only issue with the site:
+Only issue with the site (https://jcfieldsdev.github.io/warcraft3-hotkey-editor/):
 Rally point still doesn't move unless you have that extra entry (which it will not keep in your file if you save)

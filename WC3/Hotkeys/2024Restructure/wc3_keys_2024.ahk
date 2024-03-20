@@ -11,7 +11,6 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
 menu, tray, Icon, %War%, 1, 1 
 
-;;;;; Hotkeys ;;;;;
 #ifWinActive, Warcraft III ;*new to ver 1.0.41.00* only run when war3 is running
 
 ;;;;; Configurable Variables ;;;;;
@@ -20,18 +19,6 @@ menu, tray, Icon, %War%, 1, 1
 FrontMouseButtonKey := "Left"
 BackMouseButtonKey := "Right"
 DPIMouseButtonKey := "0"
-
-;;;;; Other Variables ;;;;;
-InChatRoomOn := False
-InResourceMenu := False
-
-;;;;; HotKey commands ;;;;;
-;HotKey commands must be at the top of the script (in the script's auto-execute section)
-;HotKey is used in these cases rather than more conventional remapping techniques, since we need the triggering key to be a variable
-HotKey, %DPIMouseButtonKey%, DPIMouseButtonHandler
-setMacroCtrlGroupHotkeys()
-setMacroModeRemappings()
-setInventoryHotkeys()
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; EXPLANATION OF HOTKEYS ;;;;;;;
@@ -46,9 +33,9 @@ setInventoryHotkeys()
 ;In order to achieve this, this script allows you to hold down a modifier key that will remap certain keys. This way, you can use the same keys
 ;for ctrl groups that you do for other actions. You can think of this like another 'layer' of keys under the original layer
 
-;;;;I decided to place this modifier key on the mouse for ease of use. And, in order to avoid having to switch between
-;'layers' very often, which would be cumbersome, I decided to change the idea from Layer 1 being for ctrl groups and Layer 2 being for everything else
-;to having a 'Macro' layer and a 'Micro' layer instead. Thus, only allowing you to change layers when switching between macro and micro tasks, in theory
+;;;;I decided to place this modifier key on the mouse for ease of use. And, in order to avoid having to switch back and forth between
+;'layers' very often or mid-task, which would be cumbersome, I decided to change the idea from Layer 1 being for ctrl groups and Layer 2 being for everything else
+;to having a 'Macro' layer and a 'Micro' layer instead. Thus, requiring you to change layers only when switching between macro and micro tasks
 
 ;;;;The 'Micro' layer consists of 5 ctrl groups for unit control, as well as the 3 hero hotkeys. It also has unit/hero ability keys
 ;This layer is the default layer. No modifier key needs to be held to use it
@@ -62,17 +49,38 @@ setInventoryHotkeys()
 
 ;;;;As far as hand placement goes, the hand should be comfortably positioned on A, S, E, F, Spacebar. Naturally, we are going to bind as many keys as possible to keys near this
 ;hand placement. You will notice that all units are built with A,S,E or F. It would seem natural to also place unit/hero abilities on A, S, E, and F, as in my Dota2 keys. 
-;However, in WC3, it's more important to be able to hit a hotkey + ability quickly rather than ability + ability like in dota. Thus, I used A, W, S, and D instead, and
+;However, in WC3, it's more important to be able to hit a hotkey + ability quickly rather than ability + ability like in dota. Thus, I used A, W, S, and D for abilities instead, and
 ;left E and F as hotkeys. 
-
 ;Having two abilities that are the same finger (W and S) is less of an issue in WC3 because there is usually some cast time to wait for before spamming a second ability right away anyway
+
 ;;;;Notice that none of the ability keys are hit with the pointer finger. This means that your main two ctrl groups as well as hero hotkeys will always be hit with a different
-;finger than the ability you want them to do, making that fast. The same is true for the third ctrl group (E), except for the 4th ability ('D'). Most casters that I tend
-;to put in ctrl group 3 have a non-time-sensitive ability in that spot for this reason
+;finger than the ability you want them to do, making that fast. The same is true for the third ctrl group ('E'), except for when using a unit's 4th ability ('D'). Most casters that I tend
+;to put in ctrl group 3 have a non-time-sensitive ability (or no ability) in that spot for this reason
 ;The 'D' ability key could instead be moved such that it is hit with the pinky rather than ring finger, for example, it could be on 'Z'. However, the comfort of 'D' over 'Z', especially when
-;casting multiple abilities in a row, won out
+;casting multiple abilities in a row, made 'D' win out over 'Z'
+
 ;;;;;Item hotkeys follow a similar rationale as ability hotkeys -- None of them are executed with the pointer finger, 
 ;since you often want to hit a hero hotkey with pointer finger and then hit an item quickly
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;; BEGIN MAIN SECTION OF SCRIPT ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Other Variables ;;;;;
+InChatRoomOn := False
+InResourceMenu := False
+
+;;;;; HotKey commands ;;;;;
+;HotKey commands must be placed at the top of the script (in the script's auto-execute section)
+;HotKey command is used in these cases rather than more conventional remapping techniques, since we need the triggering key to be a variable
+;Most of these HotKey commands have been placed into functions so that they can exist in a spot in the script where they make sense
+;rather than needing to be placed up top. They will instead be called up here through the use of those functions
+HotKey, %DPIMouseButtonKey%, DPIMouseButtonHandler
+setMacroCtrlGroupHotkeys()
+setMacroModeRemappings()
+setInventoryHotkeys()
+
+;;;;;;; END AUTO-EXECUTE SECTION OF SCRIPT ;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; META HOTKEYS (PAUSING, RESOURCE TRADING, ETC) ;;;;;;;
@@ -167,7 +175,7 @@ return
 *4::sendKeyWithRemappedModifier("4")
 *5::sendKeyWithRemappedModifier("5")
 
-;;;;;;Macro ctrl groups --- ensure setting them works with shift and adding with Alt
+;;;;;;Macro ctrl groups --- Accessed through use of 'Macro Mode' modifier key (Back mouse button) --- ensure setting them works with shift and adding with Alt
 setMacroCtrlGroupHotkeys()
 {
   Global BackMouseButtonKey
