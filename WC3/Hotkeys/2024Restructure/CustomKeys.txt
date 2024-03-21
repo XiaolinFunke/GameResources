@@ -290,16 +290,18 @@ Tip=Wind Walk - [|cffffcc00Level 1|r] (|cffffcc00S|r),Wind Walk - [|cffffcc00Lev
 Researchtip=Learn Wind Walk - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [aocr]
-Buttonpos=0,2
-Researchhotkey=A
-Researchbuttonpos=0,0
-Researchtip=Learn Critical Strike - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+Buttonpos=1,2
+Researchhotkey=W
+Researchbuttonpos=1,0
+Researchtip=Learn Critical Strike - [|cffffcc00Level %d|r] (|cffffcc00W|r)
 
 [aomi]
-Hotkey=W
-Researchhotkey=W
-Tip=Mirror Image - [|cffffcc00Level 1|r] (|cffffcc00W|r),Mirror Image - [|cffffcc00Level 2|r] (|cffffcc00W|r),Mirror Image - [|cffffcc00Level 3|r] (|cffffcc00W|r)
-Researchtip=Learn Mirror Image - [|cffffcc00Level %d|r] (|cffffcc00W|r)
+Hotkey=A
+Researchhotkey=A
+Tip=Mirror Image - [|cffffcc00Level 1|r] (|cffffcc00A|r),Mirror Image - [|cffffcc00Level 2|r] (|cffffcc00A|r),Mirror Image - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Researchtip=Learn Mirror Image - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+Buttonpos=0,2
+Researchbuttonpos=0,0
 
 [aoww]
 Hotkey=D
@@ -320,12 +322,12 @@ Tip=Far Sight - [|cffffcc00Level 1|r] (|cffffcc00A|r),Far Sight - [|cffffcc00Lev
 Researchtip=Learn Far Sight - [|cffffcc00Level %d|r] (|cffffcc00A|r)
 
 [aocl]
-Buttonpos=1,2
-Hotkey=W
-Researchhotkey=W
-Researchbuttonpos=1,0
-Tip=Chain Lightning - [|cffffcc00Level 1|r] (|cffffcc00W|r),Chain Lightning - [|cffffcc00Level 2|r] (|cffffcc00W|r),Chain Lightning - [|cffffcc00Level 3|r] (|cffffcc00W|r)
-Researchtip=Learn Chain Lightning - [|cffffcc00Level %d|r] (|cffffcc00W|r)
+Hotkey=D
+Researchhotkey=D
+Researchbuttonpos=3,0
+Tip=Chain Lightning - [|cffffcc00Level 1|r] (|cffffcc00D|r),Chain Lightning - [|cffffcc00Level 2|r] (|cffffcc00D|r),Chain Lightning - [|cffffcc00Level 3|r] (|cffffcc00D|r)
+Researchtip=Learn Chain Lightning - [|cffffcc00Level %d|r] (|cffffcc00D|r)
+Buttonpos=3,2
 
 [aosf]
 Hotkey=S
@@ -334,16 +336,20 @@ Tip=Feral Spirit - [|cffffcc00Level 1|r] (|cffffcc00S|r),Feral Spirit - [|cffffc
 Researchtip=Learn Feral Spirit - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [aoeq]
-Hotkey=D
-Researchhotkey=D
-Tip=Earthquake (|cffffcc00D|r)
-Researchtip=Learn Earthquake (|cffffcc00D|r)
-
-[aosh]
+Hotkey=W
+Researchhotkey=W
+Tip=Earthquake (|cffffcc00W|r)
+Researchtip=Learn Earthquake (|cffffcc00W|r)
 Buttonpos=1,2
 Researchbuttonpos=1,0
-Tip=Shockwave - [|cffffcc00Level 1|r] (|cffffcc00W|r),Shockwave - [|cffffcc00Level 2|r] (|cffffcc00W|r),Shockwave - [|cffffcc00Level 3|r] (|cffffcc00W|r)
-Researchtip=Learn Shockwave - [|cffffcc00Level %d|r] (|cffffcc00W|r)
+
+[aosh]
+Hotkey=D
+Researchhotkey=D
+Researchbuttonpos=3,0
+Tip=Shockwave - [|cffffcc00Level 1|r] (|cffffcc00D|r),Shockwave - [|cffffcc00Level 2|r] (|cffffcc00D|r),Shockwave - [|cffffcc00Level 3|r] (|cffffcc00D|r)
+Researchtip=Learn Shockwave - [|cffffcc00Level %d|r] (|cffffcc00D|r)
+Buttonpos=3,2
 
 [aoae]
 Buttonpos=0,2
@@ -360,8 +366,10 @@ Tip=War Stomp - [|cffffcc00Level 1|r] (|cffffcc00S|r),War Stomp - [|cffffcc00Lev
 Researchtip=Learn War Stomp - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [aore]
-Researchhotkey=D
-Researchtip=Learn Reincarnation (|cffffcc00D|r)
+Researchhotkey=W
+Researchtip=Learn Reincarnation (|cffffcc00W|r)
+Buttonpos=1,2
+Researchbuttonpos=1,0
 
 [aohw]
 Buttonpos=2,2
@@ -372,26 +380,28 @@ Tip=Healing Wave - [|cffffcc00Level 1|r] (|cffffcc00S|r),Healing Wave - [|cffffc
 Researchtip=Learn Healing Wave - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [aohx]
-Buttonpos=3,2
-Researchbuttonpos=3,0
-Hotkey=D
-Researchhotkey=D
-Tip=Hex - [|cffffcc00Level 1|r] (|cffffcc00D|r),Hex - [|cffffcc00Level 2|r] (|cffffcc00D|r),Hex - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchtip=Learn Hex - [|cffffcc00Level %d|r] (|cffffcc00D|r)
-
-[aosw]
-Buttonpos=1,2
-Researchbuttonpos=1,0
-Tip=Serpent Ward - [|cffffcc00Level 1|r] (|cffffcc00W|r),Serpent Ward - [|cffffcc00Level 2|r] (|cffffcc00W|r),Serpent Ward - [|cffffcc00Level 3|r] (|cffffcc00W|r)
-Researchtip=Learn Serpent Ward - [|cffffcc00Level %d|r] (|cffffcc00W|r)
-
-[aovd]
 Buttonpos=0,2
 Researchbuttonpos=0,0
 Hotkey=A
 Researchhotkey=A
-Tip=Big Bad Voodoo (|cffffcc00A|r)
-Researchtip=Learn Big Bad Voodoo (|cffffcc00A|r)
+Tip=Hex - [|cffffcc00Level 1|r] (|cffffcc00A|r),Hex - [|cffffcc00Level 2|r] (|cffffcc00A|r),Hex - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Researchtip=Learn Hex - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+
+[aosw]
+Buttonpos=3,2
+Researchbuttonpos=3,0
+Tip=Serpent Ward - [|cffffcc00Level 1|r] (|cffffcc00D|r),Serpent Ward - [|cffffcc00Level 2|r] (|cffffcc00D|r),Serpent Ward - [|cffffcc00Level 3|r] (|cffffcc00D|r)
+Researchtip=Learn Serpent Ward - [|cffffcc00Level %d|r] (|cffffcc00D|r)
+Hotkey=D
+Researchhotkey=D
+
+[aovd]
+Buttonpos=1,2
+Researchbuttonpos=1,0
+Hotkey=W
+Researchhotkey=W
+Tip=Big Bad Voodoo (|cffffcc00W|r)
+Researchtip=Learn Big Bad Voodoo (|cffffcc00W|r)
 
 [aobu]
 Buttonpos=3,2
@@ -974,12 +984,12 @@ Tip=Forked Lightning - [|cffffcc00Level 1|r] (|cffffcc00S|r),Forked Lightning - 
 Researchtip=Learn Forked Lightning - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [anto]
-Buttonpos=0,2
-Researchbuttonpos=0,0
-Hotkey=A
-Researchhotkey=A
-Tip=Tornado (|cffffcc00A|r)
-Researchtip=Learn Tornado (|cffffcc00A|r)
+Buttonpos=1,2
+Researchbuttonpos=1,0
+Hotkey=W
+Researchhotkey=W
+Tip=Tornado (|cffffcc00W|r)
+Researchtip=Learn Tornado (|cffffcc00W|r)
 
 [anfa]
 Buttonpos=3,2
@@ -991,15 +1001,15 @@ Tip=Frost Arrows - [|cffffcc00Level 1|r] (|cffffcc00D|r),Frost Arrows - [|cffffc
 Researchtip=Learn Frost Arrows - [|cffffcc00Level %d|r] (|cffffcc00D|r)
 
 [anms]
-Hotkey=W
-Unhotkey=W
-Researchhotkey=W
-Researchbuttonpos=1,0
-Buttonpos=1,2
-Unbuttonpos=1,2
-Tip=Activate Mana Shield - [|cffffcc00Level 1|r] (|cffffcc00W|r),Activate Mana Shield - [|cffffcc00Level 2|r] (|cffffcc00W|r),Activate Mana Shield - [|cffffcc00Level 3|r] (|cffffcc00W|r)
-Untip=Deactivate Mana Shield (|cffffcc00W|r)
-Researchtip=Learn Mana Shield - [|cffffcc00Level %d|r] (|cffffcc00W|r)
+Hotkey=A
+Unhotkey=A
+Researchhotkey=A
+Researchbuttonpos=0,0
+Buttonpos=0,2
+Unbuttonpos=0,2
+Tip=Activate Mana Shield - [|cffffcc00Level 1|r] (|cffffcc00A|r),Activate Mana Shield - [|cffffcc00Level 2|r] (|cffffcc00A|r),Activate Mana Shield - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Untip=Deactivate Mana Shield (|cffffcc00A|r)
+Researchtip=Learn Mana Shield - [|cffffcc00Level %d|r] (|cffffcc00A|r)
 
 [ansi]
 Hotkey=S
@@ -1010,24 +1020,29 @@ Tip=Silence - [|cffffcc00Level 1|r] (|cffffcc00S|r),Silence - [|cffffcc00Level 2
 Researchtip=Learn Silence - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [anba]
-Hotkey=W
-Researchhotkey=W
-Tip=Black Arrow - [|cffffcc00Level 1|r] (|cffffcc00W|r),Black Arrow - [|cffffcc00Level 2|r] (|cffffcc00W|r),Black Arrow - [|cffffcc00Level 3|r] (|cffffcc00W|r)
-Researchtip=Learn Black Arrow - [|cffffcc00Level %d|r] (|cffffcc00W|r)
+Hotkey=D
+Researchhotkey=D
+Tip=Black Arrow - [|cffffcc00Level 1|r] (|cffffcc00D|r),Black Arrow - [|cffffcc00Level 2|r] (|cffffcc00D|r),Black Arrow - [|cffffcc00Level 3|r] (|cffffcc00D|r)
+Researchtip=Learn Black Arrow - [|cffffcc00Level %d|r] (|cffffcc00D|r)
+Buttonpos=3,2
+Unbuttonpos=3,2
+Researchbuttonpos=3,0
 
 [andr]
-Buttonpos=3,2
-Researchbuttonpos=3,0
-Tip=Life Drain - [|cffffcc00Level 1|r] (|cffffcc00D|r),Life Drain - [|cffffcc00Level 2|r] (|cffffcc00D|r),Life Drain - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchtip=Learn Life Drain - [|cffffcc00Level %d|r] (|cffffcc00D|r)
-
-[anch]
-Hotkey=A
-Researchhotkey=A
 Buttonpos=0,2
 Researchbuttonpos=0,0
-Tip=Charm (|cffffcc00A|r)
-Researchtip=Learn Charm (|cffffcc00A|r)
+Tip=Life Drain - [|cffffcc00Level 1|r] (|cffffcc00A|r),Life Drain - [|cffffcc00Level 2|r] (|cffffcc00A|r),Life Drain - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Researchtip=Learn Life Drain - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+Hotkey=A
+Researchhotkey=A
+
+[anch]
+Hotkey=W
+Researchhotkey=W
+Buttonpos=1,2
+Researchbuttonpos=1,0
+Tip=Charm (|cffffcc00W|r)
+Researchtip=Learn Charm (|cffffcc00W|r)
 
 [anbf]
 Hotkey=D
@@ -1157,20 +1172,18 @@ Tip=Cluster Rockets - [|cffffcc00Level 1|r] (|cffffcc00S|r),Cluster Rockets - [|
 Researchtip=Learn Cluster Rockets - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [anso]
-Buttonpos=3,2
-Hotkey=D
-Researchhotkey=D
-Researchbuttonpos=3,0
-Tip=Soul Burn - [|cffffcc00Level 1|r] (|cffffcc00D|r),Soul Burn - [|cffffcc00Level 2|r] (|cffffcc00D|r),Soul Burn - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchtip=Learn Soul Burn - [|cffffcc00Level %d|r] (|cffffcc00D|r)
-
-[anvc]
-Buttonpos=0,2
 Hotkey=A
 Researchhotkey=A
-Researchbuttonpos=0,0
-Tip=Volcano (|cffffcc00A|r)
-Researchtip=Learn Volcano (|cffffcc00A|r)
+Tip=Soul Burn - [|cffffcc00Level 1|r] (|cffffcc00A|r),Soul Burn - [|cffffcc00Level 2|r] (|cffffcc00A|r),Soul Burn - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Researchtip=Learn Soul Burn - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+
+[anvc]
+Buttonpos=1,2
+Hotkey=W
+Researchhotkey=W
+Researchbuttonpos=1,0
+Tip=Volcano (|cffffcc00W|r)
+Researchtip=Learn Volcano (|cffffcc00W|r)
 
 [anlm]
 Buttonpos=2,2
@@ -1181,13 +1194,13 @@ Tip=Summon Lava Spawn - [|cffffcc00Level 1|r] (|cffffcc00S|r),Summon Lava Spawn 
 Researchtip=Learn Summon Lava Spawn - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [ania]
-Buttonpos=1,2
-Unbuttonpos=1,2
-Hotkey=W
-Researchhotkey=W
-Researchbuttonpos=1,0
-Tip=Incinerate - [|cffffcc00Level 1|r] (|cffffcc00W|r),Incinerate - [|cffffcc00Level 2|r] (|cffffcc00W|r),Incinerate - [|cffffcc00Level 3|r] (|cffffcc00W|r)
-Researchtip=Learn Incinerate - [|cffffcc00Level %d|r] (|cffffcc00W|r)
+Buttonpos=3,2
+Unbuttonpos=3,2
+Hotkey=D
+Researchhotkey=D
+Researchbuttonpos=3,0
+Tip=Incinerate - [|cffffcc00Level 1|r] (|cffffcc00D|r),Incinerate - [|cffffcc00Level 2|r] (|cffffcc00D|r),Incinerate - [|cffffcc00Level 3|r] (|cffffcc00D|r)
+Researchtip=Learn Incinerate - [|cffffcc00Level %d|r] (|cffffcc00D|r)
 
 [anhs]
 Buttonpos=2,2
@@ -1206,20 +1219,20 @@ Tip=Transmute (|cffffcc00W|r)
 Researchtip=Learn Transmute (|cffffcc00W|r)
 
 [ancr]
-Buttonpos=3,2
-Hotkey=D
-Researchhotkey=D
-Researchbuttonpos=3,0
-Tip=Chemical Rage - [|cffffcc00Level 1|r] (|cffffcc00D|r),Chemical Rage - [|cffffcc00Level 2|r] (|cffffcc00D|r),Chemical Rage - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchtip=Learn Chemical Rage - [|cffffcc00Level %d|r] (|cffffcc00D|r)
-
-[anab]
 Buttonpos=0,2
 Hotkey=A
 Researchhotkey=A
 Researchbuttonpos=0,0
-Tip=Acid Bomb - [|cffffcc00Level 1|r] (|cffffcc00A|r),Acid Bomb - [|cffffcc00Level 2|r] (|cffffcc00A|r),Acid Bomb - [|cffffcc00Level 3|r] (|cffffcc00A|r)
-Researchtip=Learn Acid Bomb - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+Tip=Chemical Rage - [|cffffcc00Level 1|r] (|cffffcc00A|r),Chemical Rage - [|cffffcc00Level 2|r] (|cffffcc00A|r),Chemical Rage - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Researchtip=Learn Chemical Rage - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+
+[anab]
+Buttonpos=3,2
+Hotkey=D
+Researchhotkey=D
+Researchbuttonpos=3,0
+Tip=Acid Bomb - [|cffffcc00Level 1|r] (|cffffcc00D|r),Acid Bomb - [|cffffcc00Level 2|r] (|cffffcc00D|r),Acid Bomb - [|cffffcc00Level 3|r] (|cffffcc00D|r)
+Researchtip=Learn Acid Bomb - [|cffffcc00Level %d|r] (|cffffcc00D|r)
 
 [aihm]
 Hotkey=C
@@ -1621,15 +1634,15 @@ Buttonpos=0,0
 Tip=Summon Mud Golem (|cffffcc00U|r)
 
 [aeim]
-Buttonpos=2,2
-Unbuttonpos=2,2
-Hotkey=S
-Tip=Activate Immolation - [|cffffcc00Level 1|r] (|cffffcc00S|r),Activate Immolation - [|cffffcc00Level 2|r] (|cffffcc00S|r),Activate Immolation - [|cffffcc00Level 3|r] (|cffffcc00S|r)
-Unhotkey=S
-Untip=Deactivate Immolation (|cffffcc00S|r)
-Researchhotkey=S
-Researchtip=Learn Immolation - [|cffffcc00Level %d|r] (|cffffcc00S|r)
-Researchbuttonpos=2,0
+Buttonpos=3,2
+Unbuttonpos=3,2
+Hotkey=D
+Tip=Activate Immolation - [|cffffcc00Level 1|r] (|cffffcc00D|r),Activate Immolation - [|cffffcc00Level 2|r] (|cffffcc00D|r),Activate Immolation - [|cffffcc00Level 3|r] (|cffffcc00D|r)
+Unhotkey=D
+Untip=Deactivate Immolation (|cffffcc00D|r)
+Researchhotkey=D
+Researchtip=Learn Immolation - [|cffffcc00Level %d|r] (|cffffcc00D|r)
+Researchbuttonpos=3,0
 
 [aeev]
 Buttonpos=1,2
@@ -1638,12 +1651,12 @@ Researchtip=Learn Evasion - [|cffffcc00Level %d|r] (|cffffcc00W|r)
 Researchbuttonpos=1,0
 
 [aemb]
-Buttonpos=3,2
-Hotkey=D
-Tip=Mana Burn - [|cffffcc00Level 1|r] (|cffffcc00D|r),Mana Burn - [|cffffcc00Level 2|r] (|cffffcc00D|r),Mana Burn - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchhotkey=D
-Researchtip=Learn Mana Burn - [|cffffcc00Level %d|r] (|cffffcc00D|r)
-Researchbuttonpos=3,0
+Buttonpos=2,2
+Hotkey=S
+Tip=Mana Burn - [|cffffcc00Level 1|r] (|cffffcc00S|r),Mana Burn - [|cffffcc00Level 2|r] (|cffffcc00S|r),Mana Burn - [|cffffcc00Level 3|r] (|cffffcc00S|r)
+Researchhotkey=S
+Researchtip=Learn Mana Burn - [|cffffcc00Level %d|r] (|cffffcc00S|r)
+Researchbuttonpos=2,0
 
 [aeme]
 Buttonpos=0,2
@@ -1946,28 +1959,24 @@ Researchhotkey=S
 Researchtip=Learn Death Coil - [|cffffcc00Level %d|r] (|cffffcc00S|r)
 
 [audp]
-Researchbuttonpos=3,0
-Buttonpos=3,2
-Hotkey=D
-Tip=Death Pact - [|cffffcc00Level 1|r] (|cffffcc00D|r),Death Pact - [|cffffcc00Level 2|r] (|cffffcc00D|r),Death Pact - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchhotkey=D
-Researchtip=Learn Death Pact - [|cffffcc00Level %d|r] (|cffffcc00D|r)
-
-[auan]
-Tip=Animate Dead (|cffffcc00A|r)
-Researchtip=Learn Animate Dead (|cffffcc00A|r)
+Researchbuttonpos=0,0
 Buttonpos=0,2
 Hotkey=A
+Tip=Death Pact - [|cffffcc00Level 1|r] (|cffffcc00A|r),Death Pact - [|cffffcc00Level 2|r] (|cffffcc00A|r),Death Pact - [|cffffcc00Level 3|r] (|cffffcc00A|r)
 Researchhotkey=A
-Researchbuttonpos=0,0
+Researchtip=Learn Death Pact - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+
+[auan]
+Tip=Animate Dead (|cffffcc00D|r)
+Researchtip=Learn Animate Dead (|cffffcc00D|r)
 
 [ausl]
-Researchbuttonpos=3,0
-Buttonpos=3,2
-Hotkey=D
-Tip=Sleep - [|cffffcc00Level 1|r] (|cffffcc00D|r),Sleep - [|cffffcc00Level 2|r] (|cffffcc00D|r),Sleep - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchhotkey=D
-Researchtip=Learn Sleep - [|cffffcc00Level %d|r] (|cffffcc00D|r)
+Researchbuttonpos=0,0
+Buttonpos=0,2
+Hotkey=A
+Tip=Sleep - [|cffffcc00Level 1|r] (|cffffcc00A|r),Sleep - [|cffffcc00Level 2|r] (|cffffcc00A|r),Sleep - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Researchhotkey=A
+Researchtip=Learn Sleep - [|cffffcc00Level %d|r] (|cffffcc00A|r)
 
 [aucs]
 Researchbuttonpos=2,0
@@ -1984,12 +1993,10 @@ Researchhotkey=W
 Researchtip=Learn Vampiric Aura - [|cffffcc00Level %d|r] (|cffffcc00W|r)
 
 [auin]
-Researchbuttonpos=0,0
-Buttonpos=0,2
-Hotkey=A
-Tip=Inferno (|cffffcc00A|r)
-Researchhotkey=A
-Researchtip=Learn Inferno (|cffffcc00A|r)
+Hotkey=D
+Tip=Inferno (|cffffcc00D|r)
+Researchhotkey=D
+Researchtip=Learn Inferno (|cffffcc00D|r)
 
 [audr]
 Buttonpos=0,2
@@ -2494,18 +2501,18 @@ Buttonpos=2,2
 Researchbuttonpos=2,0
 
 [ahre]
-Researchbuttonpos=0,0
-Hotkey=A
-Tip=Resurrection (|cffffcc00A|r)
-Researchhotkey=A
-Researchtip=Learn Resurrection (|cffffcc00A|r)
-Buttonpos=0,2
+Hotkey=D
+Tip=Resurrection (|cffffcc00D|r)
+Researchhotkey=D
+Researchtip=Learn Resurrection (|cffffcc00D|r)
 
 [ahds]
-Tip=Activate Divine Shield - [|cffffcc00Level 1|r] (|cffffcc00D|r),Activate Divine Shield - [|cffffcc00Level 2|r] (|cffffcc00D|r),Activate Divine Shield - [|cffffcc00Level 3|r] (|cffffcc00D|r)
-Researchtip=Learn Divine Shield - [|cffffcc00Level %d|r] (|cffffcc00D|r)
-Buttonpos=3,2
-Researchbuttonpos=3,0
+Tip=Activate Divine Shield - [|cffffcc00Level 1|r] (|cffffcc00A|r),Activate Divine Shield - [|cffffcc00Level 2|r] (|cffffcc00A|r),Activate Divine Shield - [|cffffcc00Level 3|r] (|cffffcc00A|r)
+Researchtip=Learn Divine Shield - [|cffffcc00Level %d|r] (|cffffcc00A|r)
+Buttonpos=0,2
+Researchbuttonpos=0,0
+Hotkey=A
+Researchhotkey=A
 
 [ahab]
 Buttonpos=1,2
