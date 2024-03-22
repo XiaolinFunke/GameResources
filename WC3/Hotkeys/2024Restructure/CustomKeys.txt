@@ -11,12 +11,10 @@ Tip=Research Backpack (|cffffcc00A|r)
 [cmdrally]
 Hotkey=J
 Buttonpos=3,2
+
 // This entry is necessary to change the rally point icon position
 // 0,-11 is a trick to make it not show up at all
 [ARal]
-Buttonpos=0,-11
-
-[aral]
 Buttonpos=0,-11
 
 [ostr]
@@ -927,53 +925,52 @@ Awakentip=Revive Tinker (|cffffcc00Q|r)
 Revivetip=Revive Tinker (|cffffcc00Q|r)
 
 [npbm]
-Buttonpos=1,0
-Hotkey=W
-Tip=Summon Pandaren Brewmaster (|cffffcc00W|r)
-Awakentip=Revive Pandaren Brewmaster (|cffffcc00W|r)
-Revivetip=Revive Pandaren Brewmaster (|cffffcc00W|r)
+Hotkey=D
+Tip=Summon Pandaren Brewmaster (|cffffcc00D|r)
+Awakentip=Revive Pandaren Brewmaster (|cffffcc00D|r)
+Revivetip=Revive Pandaren Brewmaster (|cffffcc00D|r)
 
 [nbrn]
-Buttonpos=2,0
-Hotkey=U
-Tip=Summon Dark Ranger (|cffffcc00U|r)
-Awakentip=Revive Dark Ranger (|cffffcc00U|r)
-Revivetip=Revive Dark Ranger (|cffffcc00U|r)
+Buttonpos=1,0
+Hotkey=W
+Tip=Summon Dark Ranger (|cffffcc00W|r)
+Awakentip=Revive Dark Ranger (|cffffcc00W|r)
+Revivetip=Revive Dark Ranger (|cffffcc00W|r)
 
 [nfir]
-Buttonpos=3,0
-Hotkey=I
-Tip=Summon Firelord (|cffffcc00I|r)
-Awakentip=Revive Firelord (|cffffcc00I|r)
-Revivetip=Revive Firelord (|cffffcc00I|r)
+Buttonpos=3,2
+Hotkey=V
+Tip=Summon Firelord (|cffffcc00V|r)
+Awakentip=Revive Firelord (|cffffcc00V|r)
+Revivetip=Revive Firelord (|cffffcc00V|r)
 
 [nngs]
-Buttonpos=3,1
-Hotkey=O
-Tip=Summon Naga Sea Witch (|cffffcc00O|r)
-Awakentip=Revive Naga Sea Witch (|cffffcc00O|r)
-Revivetip=Revive Naga Sea Witch (|cffffcc00O|r)
+Buttonpos=3,0
+Hotkey=I
+Tip=Summon Naga Sea Witch (|cffffcc00I|r)
+Awakentip=Revive Naga Sea Witch (|cffffcc00I|r)
+Revivetip=Revive Naga Sea Witch (|cffffcc00I|r)
 
 [nplh]
-Buttonpos=2,1
-Hotkey=D
-Tip=Summon Pit Lord (|cffffcc00D|r)
-Awakentip=Revive Pit Lord (|cffffcc00D|r)
-Revivetip=Revive Pit Lord (|cffffcc00D|r)
+Buttonpos=1,2
+Hotkey=N
+Tip=Summon Pit Lord (|cffffcc00N|r)
+Awakentip=Revive Pit Lord (|cffffcc00N|r)
+Revivetip=Revive Pit Lord (|cffffcc00N|r)
 
 [nalc]
-Buttonpos=1,1
-Hotkey=S
-Tip=Summon Alchemist (|cffffcc00S|r)
-Awakentip=Revive Alchemist (|cffffcc00S|r)
-Revivetip=Revive Alchemist (|cffffcc00S|r)
+Buttonpos=2,2
+Hotkey=C
+Tip=Summon Alchemist (|cffffcc00C|r)
+Awakentip=Revive Alchemist (|cffffcc00C|r)
+Revivetip=Revive Alchemist (|cffffcc00C|r)
 
 [nbst]
-Buttonpos=0,1
-Hotkey=A
-Tip=Summon Beastmaster (|cffffcc00A|r)
-Awakentip=Revive Beastmaster (|cffffcc00A|r)
-Revivetip=Revive Beastmaster (|cffffcc00A|r)
+Buttonpos=0,2
+Hotkey=Z
+Tip=Summon Beastmaster (|cffffcc00Z|r)
+Awakentip=Revive Beastmaster (|cffffcc00Z|r)
+Revivetip=Revive Beastmaster (|cffffcc00Z|r)
 
 [anfl]
 Buttonpos=2,2
