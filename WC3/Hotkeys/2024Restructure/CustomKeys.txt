@@ -518,8 +518,8 @@ Hotkey=S
 Tip=Healing Ward (|cffffcc00S|r)
 
 [aspl]
-Buttonpos=1,2
-Hotkey=W
+Buttonpos=0,2
+Hotkey=A
 Tip=Spirit Link (|cffffcc00W|r)
 
 [acpf]
@@ -531,8 +531,8 @@ Tip=Corporeal Form (|cffffcc00A|r)
 Untip=Ethereal Form (|cffffcc00A|r)
 
 [aast]
-Buttonpos=0,2
-Hotkey=A
+Buttonpos=1,2
+Hotkey=W
 Tip=Ancestral Spirit (|cffffcc00D|r)
 
 [adcn]
