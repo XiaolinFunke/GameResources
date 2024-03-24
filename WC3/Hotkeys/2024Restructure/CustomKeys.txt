@@ -903,9 +903,9 @@ Hotkey=S
 Tip=Wind Walk (|cffffcc00S|r)
 
 [accy]
-Buttonpos=3,2
-Hotkey=D
-Tip=Cyclone (|cffffcc00D|r)
+Buttonpos=0,2
+Hotkey=A
+Tip=Cyclone (|cffffcc00A|r)
 
 [adsm]
 Buttonpos=1,2
