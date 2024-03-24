@@ -2315,8 +2315,8 @@ Tip=Research Stone Form (|cffffcc00I|r)
 
 [ruwb]
 Buttonpos=2,2
-Hotkey=M
-Tip=Research Web (|cffffcc00M|r)
+Hotkey=C
+Tip=Research Web (|cffffcc00C|r)
 
 [rugf]
 Hotkey=A
@@ -2329,8 +2329,8 @@ Tip=Upgrade to Creature Carapace (|cffffcc00D|r),Upgrade to Improved Creature Ca
 
 [rura]
 Buttonpos=2,0
-Hotkey=E,E,E
-Tip=Upgrade to Creature Attack (|cffffcc00E|r),Upgrade to Improved Creature Attack (|cffffcc00E|r),Upgrade to Advanced Creature Attack (|cffffcc00E|r)
+Hotkey=U,U,U
+Tip=Upgrade to Creature Attack (|cffffcc00U|r),Upgrade to Improved Creature Attack (|cffffcc00U|r),Upgrade to Advanced Creature Attack (|cffffcc00U|r)
 
 [rume]
 Buttonpos=1,0
@@ -2902,8 +2902,8 @@ Tip=Train Mortar Team (|cffffcc00U|r)
 
 [rhfs]
 Buttonpos=2,2
-Hotkey=N
-Tip=Research Fragmentation Shards (|cffffcc00N|r)
+Hotkey=C
+Tip=Research Fragmentation Shards (|cffffcc00C|r)
 
 [hgyr]
 Buttonpos=1,1
