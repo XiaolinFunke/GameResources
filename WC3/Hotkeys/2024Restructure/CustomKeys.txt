@@ -1896,29 +1896,29 @@ Hotkey=W
 Tip=Dismount Archer & Hippogryph (|cffffcc00W|r)
 
 [arav]
-Buttonpos=0,2
-Unbuttonpos=0,2
-Hotkey=A
-Tip=Storm Crow Form (|cffffcc00A|r)
-Unhotkey=A
-Untip=Night Elf Form (|cffffcc00A|r)
+Buttonpos=1,2
+Unbuttonpos=1,2
+Hotkey=W
+Tip=Storm Crow Form (|cffffcc00W|r)
+Unhotkey=W
+Untip=Night Elf Form (|cffffcc00W|r)
 
 [acyc]
-Buttonpos=2,2
-Hotkey=S
-Tip=Cyclone (|cffffcc00S|r)
+Buttonpos=0,2
+Hotkey=A
+Tip=Cyclone (|cffffcc00A|r)
 
 [afae]
-Buttonpos=1,2
-Unbuttonpos=1,2
-Hotkey=W
-Tip=Faerie Fire (|cffffcc00W|r)
+Buttonpos=2,2
+Unbuttonpos=2,2
+Hotkey=S
+Tip=Faerie Fire (|cffffcc00S|r)
 
 [afa2]
-Hotkey=W
-Tip=Faerie Fire (|cffffcc00W|r)
-Buttonpos=1,2
-Unbuttonpos=1,2
+Hotkey=S
+Tip=Faerie Fire (|cffffcc00S|r)
+Buttonpos=2,2
+Unbuttonpos=2,2
 
 [amfl]
 Buttonpos=2,2
@@ -3155,10 +3155,10 @@ Hotkey=S
 Tip=Rejuvenation (|cffffcc00S|r)
 
 [acff]
-Buttonpos=1,2
-Unbuttonpos=1,2
-Hotkey=W
-Tip=Faerie Fire (|cffffcc00W|r)
+Buttonpos=2,2
+Unbuttonpos=2,2
+Hotkey=S
+Tip=Faerie Fire (|cffffcc00S|r)
 
 [acls]
 Hotkey=A
