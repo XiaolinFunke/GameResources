@@ -1,0 +1,121 @@
+LH = Left hand (keyboard)
+RH = Right hand (mouse) - tend to be slower
+
+Default method uses a lot of RH actions. If we could make some of those LH actions, they could be done in tandem and save speed and accuracy
+
+Wisp juggling:
+
+Normal method:
+RH: Select wisp                             
+RH: Move wisp to mine                     
+RH: Select Mine                             
+RH: Unload Wisp                            
+RH: Select Wisp                             
+RH: Move wisp to mine                     
+
+6 RH actions
+
+
+Shift-Queue Method (1 less action needed, but timing is harder)
+RH: Select wisp
+RH: Move wisp near mine
+LH + RH: Shift move wisp to mine
+RH: Select Mine
+RH: Unload Wisp
+
+5 RH actions
+
+Hotkey Mine Method (1 action is moved to left hand)
+RH: Select Wisp
+RH: Move wisp near mine
+LH: Select Mine with hotkey
+RH: Unload Wisp
+RH: Select Wisp
+RH: Move wisp to mine
+
+5 RH actions
+
+
+Hotkey Mine Method + Shift-Queue Method (1 action is moved to left hand AND 1 less action needed, but timing is harder)
+RH: Select Wisp
+RH: Move wisp near mine
+LH + RH: Shift move wisp to mine
+LH: Select Mine with hotkey
+RH: Unload Wisp
+
+4 RH actions
+
+
+
+Hotkey Mine AND Wisp Method (2 actions are moved to left hand, but an has an additional LH action)
+RH: Select Wisp
+LH: Hotkey wisp
+RH: Move wisp to mine
+LH: Select mine with hotkey
+RH: Unload wisp
+LH: Select wisp with hotkey
+RH: Move wisp to mine
+
+4 RH actions
+
+
+Conclusions:
+Hotkeying the mine appears to be good on paper because it saves a RH action, BUT I'm not sure it's that good
+because that action isn't that hard anyway. You've always just right-clicked the mine, so left-clicking it immediately after is not a big deal
+
+
+Can also do "unload all" on the mine to save one of the most demanding RH actions, but you do lose out on gold, so only should do that if necessary (or if have 2 wisps you need to save at once)
+
+So, I'm thinking the best two options are:
+Shift-Queue method
+Hotkeying Wisp ONLY method
+
+Since they both save the action of having to reselect the wisp
+
+Down-side of shift-queue method is you might get the timing wrong
+Down-side of hotkey method is you need a free hotkey and it's maybe slightlty harder to execute
+
+Let's compare further:
+
+Shift-Queue method:
+RH: Select wisp                    Same in both
+RH: Move wisp near mine            Slighy harder here because you need to go near mine but not on it
+LH + RH: Shift move wisp to mine   Easier because you're already right near the mine with mouse
+RH: Select Mine                    Same in both
+RH: Unload Wisp                    Same in both
+
+RH: Select new wisp                Harder because your mouse isn't near the mine
+RH: Move new wisp                  Same in both
+
+
+Tracking mouse movement and selections:
+
+SELECT Wisp -----> Near mine ----> Mine + SELECT mine ---> SELECT new wisp   ----> move wisp
+												|	
+												|
+												|
+											Unload wisp
+
+Hotkey Wisp method:
+RH: Select wisp               Same in both
+RH: Move wisp to mine         Slightly easier here because you can click the mine
+LH: Hotkey wisp               Not too hard, can do while moving wisp
+RH: Select mine               Same in both
+RH: Unload Wisp               Same in both
+LH: Select wisp with hotkey   Not hard
+RH: Move wisp to mine         Takes some mouse movement because you're coming up from having clicked a wisp out of the mine
+
+RH: Select new wisp           Easier because you're already at the mine
+RH: Move new wisp             Same in both
+
+
+SELECT Wisp ----->  Mine + SELECT mine ---> Mine   ----> SELECT new wisp ----> move wisp
+							|	
+							|
+							|
+						Unload wisp
+						
+						
+They seem a similar level of efficiency, but						
+I prefer the hotkey wisp method because the shift-queue method can go wrong if the wisp is too close to the mine (wisp arrives too soon)
+You can also use the hotkey to detonate instead if it looks like the wisp won't make it

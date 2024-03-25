@@ -2602,6 +2602,9 @@ Researchbuttonpos=1,0
 [cmdbuildhuman]
 Hotkey=D
 Tip=Build Structure (|cffffcc00D|r)
+//This entry is needed to change the position of the build icon
+[AHbu]
+Buttonpos=3,2
 
 [hwtw]
 Buttonpos=1,1
@@ -2609,8 +2612,10 @@ Hotkey=S
 Tip=Build Scout Tower (|cffffcc00S|r)
 
 [amil]
-Unbuttonpos=1,2
+Buttonpos=1,2
+Unbuttonpos=0,2
 Hotkey=W
+Unhotkey=A
 Tip=Call to Arms (|cffffcc00W|r)
 Untip=Back to Work (|cffffcc00W|r)
 
