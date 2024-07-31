@@ -1332,8 +1332,8 @@ Hotkey=W
 Buttonpos=1,2
 
 [adri]
-Hotkey=S
-Buttonpos=2,2
+Hotkey=A
+Buttonpos=0,2
 
 [aeat]
 Hotkey=A
