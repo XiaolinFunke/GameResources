@@ -14,11 +14,15 @@ menu, tray, Icon, %War%, 1, 1
 #ifWinActive, Warcraft III ;*new to ver 1.0.41.00* only run when war3 is running
 
 ;;;;; Configurable Variables ;;;;;
-;;; Due to Logitech GHub, my mouse buttons send these keys -- modify for your own situation
-;;; Need quotes around these because they are used in key combinations (%var% & Y)
-FrontMouseButtonKey := "Left"
-BackMouseButtonKey := "Right"
-DPIMouseButtonKey := "0"
+;;; Due to Logitech GHub, some of my mouse buttons send non-standard keys when pressed 
+;;; This may or may not be the case for you -- modify these variables to reflect the keys your mouse sends
+;;; Need quotes around these because some of them are used in key combinations (%var% & Y)
+FrontMouseButtonKey := "Left"  ;Standard key would be XButton2 - This is referring to the side mouse button that is farther from the palm of the hand
+BackMouseButtonKey := "Right"  ;Standard key would be XButton1 - This is referring to the side mouse button that is closer to the palm of the hand
+DPIMouseButtonKey := "0"    
+MouseWheelClick := "MButton"
+MouseWheelScrollUp := "WheelUp"
+MouseWheelScrollDown := "WheelDown"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; EXPLANATION OF HOTKEYS ;;;;;;;
@@ -76,6 +80,9 @@ InResourceMenu := False
 ;Most of these HotKey commands have been placed into functions so that they can exist in a spot in the script where they make sense
 ;rather than needing to be placed up top. They will instead be called up here through the use of those functions
 HotKey, %DPIMouseButtonKey%, DPIMouseButtonHandler
+HotKey, %MouseWheelClick%, MouseWheelClickHandler
+HotKey, %MouseWheelScrollUp%, MouseWheelScrollUpHandler
+HotKey, %MouseWheelScrollDown%, MouseWheelScrollDownHandler
 setMacroCtrlGroupHotkeys()
 setMacroModeRemappings()
 setInventoryHotkeys()
@@ -307,8 +314,8 @@ DPIMouseButtonHandler:
 Send {Tab}
 return
 
-;;;;;; Make mouse wheel middle button click send K to be a useable key
-MButton::
+;;;;;; Make pushing in the mouse wheel (mouse wheel 'click') send K, so it is a useable key
+MouseWheelClickHandler:
 Send, k
 return
 
@@ -318,8 +325,8 @@ return
 ;;;;;; Make mouse wheel down and up act as the same useable key
 ;;;;;; Using this for 'Stop' for faking abilities like coil, dagger
 ;;;;;; and for spamming stop on a tower to stop it from taking XP
-WheelDown::
-WheelUp::
+MouseWheelScrollUpHandler:
+MouseWheelScrollDownHandler:
 Send, m
 return
 
