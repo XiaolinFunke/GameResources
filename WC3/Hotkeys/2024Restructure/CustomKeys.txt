@@ -1896,12 +1896,12 @@ Hotkey=W
 Tip=Dismount Archer & Hippogryph (|cffffcc00W|r)
 
 [arav]
-Buttonpos=1,2
-Unbuttonpos=1,2
-Hotkey=W
-Tip=Storm Crow Form (|cffffcc00W|r)
-Unhotkey=W
-Untip=Night Elf Form (|cffffcc00W|r)
+Buttonpos=3,2
+Unbuttonpos=3,2
+Hotkey=D
+Tip=Storm Crow Form (|cffffcc00D|r)
+Unhotkey=D
+Untip=Night Elf Form (|cffffcc00D|r)
 
 [acyc]
 Buttonpos=0,2
