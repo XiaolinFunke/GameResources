@@ -2245,8 +2245,8 @@ Hotkey=S
 Tip=Essence of Blight (|cffffcc00S|r)
 
 [ubsp]
-Buttonpos=1,2
-Hotkey=W
+Buttonpos=3,2
+Hotkey=D
 Tip=Morph into Destroyer (|cffffcc00W|r)
 
 [advm]
