@@ -1621,9 +1621,6 @@ Researchtip=Learn Pocket Factory - [|cffffcc00Level %d|r] (|cffffcc00D|r)
 Buttonpos=3,2
 Researchbuttonpos=3,0
 
-[wneg]
-Buttonpos=1,0
-
 [gemt]
 Buttonpos=0,0
 
@@ -2459,6 +2456,10 @@ Tip=Purchase Rod of Necromancy (|cffffcc00Q|r)
 [skul]
 Hotkey=U
 Tip=Purchase Sacrificial Skull (|cffffcc00U|r)
+
+[wneg]
+Buttonpos=3,1
+Hotkey=O
 
 [ocor]
 Hotkey=Z
