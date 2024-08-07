@@ -48,8 +48,8 @@ Open ally menu / send resources (for resource trading): Y
 Pause/unpause game: 6
 Learn ability on hero: Middle mouse button
 
-Subgroup Order Modifier Key or add to control group:
-Alt
+Subgroup Order Modifier Key, or select all units of one type, or add to control group:
+Alt, or Ctrl, or Windows Key (they all act identically)
 
 Set control group:
 Shift

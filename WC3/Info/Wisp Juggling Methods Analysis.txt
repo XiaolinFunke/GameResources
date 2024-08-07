@@ -117,5 +117,4 @@ SELECT Wisp ----->  Mine + SELECT mine ---> Mine   ----> SELECT new wisp ----> m
 						
 						
 They seem a similar level of efficiency, but						
-I prefer the hotkey wisp method because the shift-queue method can go wrong if the wisp is too close to the mine (wisp arrives too soon)
-You can also use the hotkey to detonate instead if it looks like the wisp won't make it
+I prefer the hotkey wisp method because the shift-queue method can go wrong if the wisp is too close to the mine (wisp arrives too soon) and allows for less fleixbility if the wisp ends up needing to detonate, or make a building, or go into the mine sooner than expected, or doesn't need to end up going in the mine at all

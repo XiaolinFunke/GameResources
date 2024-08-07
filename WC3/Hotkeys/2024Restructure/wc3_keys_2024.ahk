@@ -5,7 +5,6 @@
 #MaxThreads 20			;use 20 (the max) instead of 10 threads
 SetBatchLines, -1		;makes the script run at max speed
 SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
-;Thread, Interrupt , -1, -1	;not sure what this does, could be bad for timers 
 
 ;;;;; Make the icon the TFT icon (Author: NiJo?) ;;;;;  
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
@@ -213,15 +212,15 @@ return
 *T::Send, {F2}
 *G::Send, {F3}
 
-;;;; Since some ctrl group hotkeys are already triggered using 2 keys in combination, and 3 key combinations are not supported by autohotkey,
-;;;; Use this function to have shift function as Ctrl for setting ctrl groups and Alt function as shift for Ctrl group adding
+;;;; Since some control group hotkeys are already triggered using 2 keys in combination, and 3 key combinations are not supported by autohotkey,
+;;;; use this function to have shift function as Ctrl for setting control groups and Ctrl (and Alt, since it's aliased to Ctrl) function as shift for Ctrl group adding
 sendKeyWithRemappedModifier(keyToSend)
 {
   if (GetKeyState("Shift")) or (GetKeyState("Shift"), "P") {
     ;;;; Don't need to release shift, since, in WC3, Shift + Ctrl + hotkey SETS the control group rather than adding to it (unlike in dota2)
     Send ^%keyToSend%
   }
-  else if (GetKeyState("Alt")) or (GetKeyState("Alt"), "P") {
+  else if (GetKeyState("Ctrl")) or (GetKeyState("Ctrl"), "P") {
     Send +%keyToSend%
   }
   else
@@ -335,15 +334,16 @@ X & LButton::
 Send !{LButton}
 return
 
-;;;;;; Make alt function as ctrl for subgroup order modifier key (useful for destro micro w/ statues and sending ghoul to lumber at start of game)
-!RButton::
-Send ^{RButton}
-return
-;;;;;; Make Alt function as Ctrl for Ctrl-clicking to select multiple units
-!LButton::
-Send ^{LButton}
-return
+;;;;;; Alias windows key and Alt to ctrl
+;;;;;; This allows for the use of Alt for subgroup order modifier key and Ctrl-clicking to select all of a unit type, but also 
+;;;;;; ensures that holding alt to use those functions won't toggle the health bars
+;;;;;; Recall that Ctrl and shift have swapped roles for hotkey setting / adding, so Alt will now be functioning to ADD to a hotkey, but also
+;;;;;; for the subgroup order modifier key and ctrl-clicking
+;;;;;; (which is why we don't just do Alt -> Shift directly, since subgroup order modifier key and ctrl-clicking are hardcoded to Ctrl)
+;;;;;;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Ctrl
+LWin::LCtrl
+LAlt::LCtrl
 
-;;;;;; Alias windows key to Alt
-;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Alt
-LWin::LAlt
+;;;;;;Ensure Alt-Tab works by setting Ctrl-Tab to also do Alt-Tab
+;;;;;;Have to do AltTabMenu here rather than AltTab, or it will only trigger with Ctrl itself for some reason
+<^Tab::AltTabMenu
