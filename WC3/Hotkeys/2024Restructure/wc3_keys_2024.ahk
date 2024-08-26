@@ -10,7 +10,7 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
 menu, tray, Icon, %War%, 1, 1 
 
-#ifWinActive, Warcraft III ;*new to ver 1.0.41.00* only run when war3 is running
+#ifWinActive, ahk_exe Warcraft III.exe ;Only run when wc3 window is active
 
 ;;;;; Configurable Variables ;;;;;
 ;;; Due to Logitech GHub, some of my mouse buttons send non-standard keys when pressed 
@@ -341,9 +341,25 @@ return
 ;;;;;; for the subgroup order modifier key and ctrl-clicking
 ;;;;;; (which is why we don't just do Alt -> Shift directly, since subgroup order modifier key and ctrl-clicking are hardcoded to Ctrl)
 ;;;;;;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Ctrl
-LWin::LCtrl
 LAlt::LCtrl
+
+;Terminate IfWinActive condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
+;Have it only active when WC3 is open (even if inactive) instead
+#IfWinActive
+#IfWinExist, ahk_exe Warcraft III.exe
+;Windows key functions as Alt -- needed for Alt-Tabbing
+LWin::LAlt
 
 ;;;;;;Ensure Alt-Tab works by setting Ctrl-Tab to also do Alt-Tab
 ;;;;;;Have to do AltTabMenu here rather than AltTab, or it will only trigger with Ctrl itself for some reason
-<^Tab::AltTabMenu
+;But AltTabMenu isn't really what we want, since it keeps the tabs up unless you click one or hit enter
+;<^Tab::AltTab
+
+
+;<^Tab::
+;{
+;Send {LAlt Down}{Tab}
+;KeyWait, LCtrl
+;Send {LAlt Up}
+;}
+;return
