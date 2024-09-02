@@ -1509,14 +1509,14 @@ Hotkey=S
 Tip=Train Hippogryph (|cffffcc00S|r)
 
 [echm]
-Buttonpos=2,0
-Hotkey=U
-Tip=Train Chimaera (|cffffcc00U|r)
+Buttonpos=1,1
+Hotkey=S
+Tip=Train Chimaera (|cffffcc00S|r)
 
 [recb]
-Buttonpos=2,1
-Hotkey=D
-Tip=Research Corrosive Breath (|cffffcc00D|r)
+Buttonpos=1,0
+Hotkey=W
+Tip=Research Corrosive Breath (|cffffcc00W|r)
 
 [moon]
 Buttonpos=3,0
@@ -2435,14 +2435,14 @@ Hotkey=S
 Tip=Sacrifice (|cffffcc00S|r)
 
 [ufro]
-Buttonpos=2,0
-Hotkey=U
-Tip=Train Frost Wyrm (|cffffcc00U|r)
+Buttonpos=1,1
+Hotkey=S
+Tip=Train Frost Wyrm (|cffffcc00S|r)
 
 [rufb]
-Buttonpos=2,1
-Hotkey=D
-Tip=Research Freezing Breath (|cffffcc00D|r)
+Buttonpos=1,0
+Hotkey=W
+Tip=Research Freezing Breath (|cffffcc00W|r)
 
 [ritd]
 Buttonpos=3,0
