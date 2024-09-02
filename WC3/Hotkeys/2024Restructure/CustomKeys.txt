@@ -4,9 +4,9 @@ Hotkey=S
 Tip=Train Peon (|cffffcc00S|r)
 
 [ropm]
-Buttonpos=0,1
-Hotkey=A
-Tip=Research Backpack (|cffffcc00A|r)
+Buttonpos=3,0
+Hotkey=I
+Tip=Research Backpack (|cffffcc00I|r)
 
 [cmdrally]
 Hotkey=J
@@ -1312,8 +1312,8 @@ Hotkey=C
 Unhotkey=C
 
 [repm]
-Buttonpos=0,1
-Hotkey=A
+Hotkey=I
+Tip=Research Backpack (|cffffcc00I|r)
 
 [etoa]
 Buttonpos=2,1
@@ -2266,9 +2266,9 @@ Hotkey=S
 Tip=Train Acolyte (|cffffcc00S|r)
 
 [rupm]
-Buttonpos=0,1
-Hotkey=A
-Tip=Research Backpack (|cffffcc00A|r)
+Buttonpos=3,0
+Hotkey=I
+Tip=Research Backpack (|cffffcc00I|r)
 
 [unp1]
 Buttonpos=2,1
@@ -2618,7 +2618,7 @@ Unbuttonpos=0,2
 Hotkey=W
 Unhotkey=A
 Tip=Call to Arms (|cffffcc00W|r)
-Untip=Back to Work (|cffffcc00W|r)
+Untip=Back to Work (|cffffcc00A|r)
 
 [ahrp]
 Buttonpos=2,2
@@ -2754,9 +2754,9 @@ Hotkey=S
 Tip=Train Peasant (|cffffcc00S|r)
 
 [rhpm]
-Buttonpos=0,1
-Hotkey=A
-Tip=Research Backpack (|cffffcc00A|r)
+Buttonpos=3,0
+Hotkey=I
+Tip=Research Backpack (|cffffcc00I|r)
 
 [hkee]
 Buttonpos=2,1
@@ -2764,11 +2764,12 @@ Hotkey=D
 Tip=Upgrade to Keep (|cffffcc00D|r)
 
 [amic]
-Buttonpos=2,0
-Unbuttonpos=1,0
-Hotkey=U
-Tip=Call to Arms (|cffffcc00U|r)
-Untip=Back to Work (|cffffcc00W|r)
+Buttonpos=1,0
+Unbuttonpos=0,1
+Hotkey=W
+Unhotkey=A
+Tip=Call to Arms (|cffffcc00W|r)
+Untip=Back to Work (|cffffcc00A|r)
 
 [hcas]
 Buttonpos=2,1
@@ -2799,6 +2800,11 @@ Tip=Train Rifleman (|cffffcc00U|r)
 Buttonpos=3,0
 Hotkey=I
 Tip=Research Animal War Training (|cffffcc00I|r)
+
+[rhsb]
+Buttonpos=3,2
+Hotkey=V
+Tip=Research Sundering Blades (|cffffcc00I|r)
 
 [rhri]
 Buttonpos=2,1
