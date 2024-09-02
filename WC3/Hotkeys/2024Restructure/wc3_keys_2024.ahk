@@ -10,6 +10,7 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
 menu, tray, Icon, %War%, 1, 1 
 
+;#ifWinActive, Warcraft III ;Only run when wc3 window is active
 #ifWinActive, ahk_exe Warcraft III.exe ;Only run when wc3 window is active
 
 ;;;;; Configurable Variables ;;;;;
@@ -343,23 +344,9 @@ return
 ;;;;;;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Ctrl
 LAlt::LCtrl
 
-;Terminate IfWinActive condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
-;Have it only active when WC3 is open (even if inactive) instead
-#IfWinActive
-#IfWinExist, ahk_exe Warcraft III.exe
-;Windows key functions as Alt -- needed for Alt-Tabbing
+#IfWinActive ;Terminate IfWinActive condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
+#IfWinExist, ahk_exe Warcraft III.exe  ;Have it only active when WC3 is open (even if inactive) instead
+;;;;;;Windows key functions as Alt -- needed for Alt-Tabbing
 LWin::LAlt
-
-;;;;;;Ensure Alt-Tab works by setting Ctrl-Tab to also do Alt-Tab
-;;;;;;Have to do AltTabMenu here rather than AltTab, or it will only trigger with Ctrl itself for some reason
-;But AltTabMenu isn't really what we want, since it keeps the tabs up unless you click one or hit enter
-;<^Tab::AltTab
-
-
-;<^Tab::
-;{
-;Send {LAlt Down}{Tab}
-;KeyWait, LCtrl
-;Send {LAlt Up}
-;}
-;return
+#IfWinExist, ahk_exe Warcraft III.exe  ;Terminate IfWinExist condition
+#ifWinActive, ahk_exe Warcraft III.exe ;Re-instate ifWinActive condition -- necessary since a lot fo the hotkeys are done with handlers that still need to fire conditionally
