@@ -10,8 +10,7 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
 menu, tray, Icon, %War%, 1, 1 
 
-;#ifWinActive, Warcraft III ;Only run when wc3 window is active
-#ifWinActive, ahk_exe Warcraft III.exe ;Only run when wc3 window is active
+#if WinActive("ahk_exe Warcraft III.exe") || WinActive("ahk_exe W3Champions.exe") ;Only run when wc3 window is active or w3Champions window is active
 
 ;;;;; Configurable Variables ;;;;;
 ;;; Due to Logitech GHub, some of my mouse buttons send non-standard keys when pressed 
@@ -344,9 +343,9 @@ return
 ;;;;;;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Ctrl
 LAlt::LCtrl
 
-#IfWinActive ;Terminate IfWinActive condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
-#IfWinExist, ahk_exe Warcraft III.exe  ;Have it only active when WC3 is open (even if inactive) instead
+;Replace If WinActive condition with If WinExist condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
+;Require WC3 or W3Champs to just be open instead
+#If WinExist("ahk_exe Warcraft III.exe") || WinExist("ahk_exe W3Champions.exe")  
 ;;;;;;Windows key functions as Alt -- needed for Alt-Tabbing
 LWin::LAlt
-#IfWinExist, ahk_exe Warcraft III.exe  ;Terminate IfWinExist condition
-#ifWinActive, ahk_exe Warcraft III.exe ;Re-instate ifWinActive condition -- necessary since a lot fo the hotkeys are done with handlers that still need to fire conditionally
+#If WinActive("ahk_exe Warcraft III.exe") || WinActive("ahk_exe W3Champions.exe") ;Re-instate if WinActive condition -- necessary since a lot of the hotkeys are done with handlers that still need to fire conditionally
