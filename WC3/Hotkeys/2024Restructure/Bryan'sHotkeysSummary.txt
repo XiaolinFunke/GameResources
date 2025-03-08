@@ -44,6 +44,7 @@ Tab between unit/building types: Tab OR Mouse DPI button
 Uproot / reroot, Hide/Shadowmeld: C
 Beacon: X
 Cancel: Z
+Cycle through Town Halls: BMB + 3
 Open ally menu / send resources (for resource trading): Y
 Pause/unpause game: 6
 Learn ability on hero: Middle mouse button

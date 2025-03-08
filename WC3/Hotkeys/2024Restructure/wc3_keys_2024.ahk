@@ -272,7 +272,7 @@ return
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;; MACRO MODE MDOFIER KEY ;;;;;;;
+;;;;;;; MACRO MODE MODIFIER KEY ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;'Macro' mode modifier key (if confused, see hotkey explanation at the top of this script)
@@ -286,6 +286,7 @@ setMacroModeRemappings()
   HotKey, %BackMouseButtonKey% & R, MacroRHandler
   HotKey, %BackMouseButtonKey% & F, MacroFHandler
   HotKey, %BackMouseButtonKey% & X, MacroXHandler
+  HotKey, %BackMouseButtonKey% & 3, Macro3Handler
 }
 MacroEHandler:
 Send, u
@@ -299,7 +300,10 @@ return
 MacroXHandler:
 Send, n
 return
-
+;;;;;; Make BMB + 3 send Backspace for cycling through town halls
+Macro3Handler:
+Send, {Backspace}
+return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; SIMPLE REBINDS TO GET AROUND HARD-CODED / UNBINDABLE KEYS ;;;;;;;
