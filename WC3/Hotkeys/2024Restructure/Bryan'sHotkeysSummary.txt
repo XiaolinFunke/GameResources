@@ -29,8 +29,8 @@ A Z
 
 I usually store items roughly like this:
 (TP)   (Scroll of healing)           
-(Scroll of protection)  (Staff, Scroll of speed)
-(Invuln / healing pot)  (Mana pot)   
+(Mana pot)  (Staff of Pres, Scroll of speed)
+(Invuln / healing pot)  (Scroll of Protection, Staff of Tele)
 
 
 Basic hotkeys:
@@ -44,7 +44,9 @@ Tab between unit/building types: Tab OR Mouse DPI button
 Uproot / reroot, Hide/Shadowmeld: C
 Beacon: X
 Cancel: Z
-Cycle through Town Halls: BMB + 3
+Select idle worker: BMB + 3
+Cycle through Town Halls: FMB + C
+Go to last alert: FMB + Q
 Open ally menu / send resources (for resource trading): Y
 Pause/unpause game: 6
 Learn ability on hero: Middle mouse button

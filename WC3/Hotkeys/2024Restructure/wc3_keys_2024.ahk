@@ -85,6 +85,7 @@ HotKey, %MouseWheelScrollDown%, MouseWheelScrollDownHandler
 setMacroCtrlGroupHotkeys()
 setMacroModeRemappings()
 setInventoryHotkeys()
+setCameraHotkeys()
 
 ;;;;;;; END AUTO-EXECUTE SECTION OF SCRIPT ;;;;;;
 
@@ -235,8 +236,8 @@ sendKeyWithRemappedModifier(keyToSend)
 ;;;;;;; INVENTORY HOTKEYS ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;;Front mouse button + ability hotkeys send inventory keys
-; Arrangement is like so:
+;;;;;;Front mouse button + keys send inventory keys
+; Arrangement is like so (keys that correspond to position in inventory):
 ; E D
 ; W S
 ; A Z
@@ -270,6 +271,25 @@ Send, {Numpad2}
 return
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;; CAMERA HOTKEYS ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;Front mouse button will also be used for the two camera-moving hotkeys
+;Which are cycle through town halls and go to last alert
+
+setCameraHotkeys()
+{
+  Global FrontMouseButtonKey
+  HotKey, %FrontMouseButtonKey% & C, CycleTownHallHandler
+  HotKey, %FrontMouseButtonKey% & Q, GoToLastAlertHandler
+}
+CycleTownHallHandler:
+Send, {Backspace}
+return
+GoToLastAlertHandler:
+Send, {Space}
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; MACRO MODE MODIFIER KEY ;;;;;;;
@@ -300,10 +320,12 @@ return
 MacroXHandler:
 Send, n
 return
-;;;;;; Make BMB + 3 send Backspace for cycling through town halls
+;;;;;; Make BMB + 3 send ` for selecting idle worker
+;Note that backtick must be escaped with another backtick to register properly with Autohtokey
 Macro3Handler:
-Send, {Backspace}
+Send, "``"
 return
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; SIMPLE REBINDS TO GET AROUND HARD-CODED / UNBINDABLE KEYS ;;;;;;;
