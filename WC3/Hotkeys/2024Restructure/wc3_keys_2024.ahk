@@ -282,7 +282,7 @@ setCameraHotkeys()
 {
   Global FrontMouseButtonKey
   HotKey, %FrontMouseButtonKey% & C, CycleTownHallHandler
-  HotKey, %FrontMouseButtonKey% & Q, GoToLastAlertHandler
+  HotKey, %FrontMouseButtonKey% & V, GoToLastAlertHandler
 }
 CycleTownHallHandler:
 Send, {Backspace}

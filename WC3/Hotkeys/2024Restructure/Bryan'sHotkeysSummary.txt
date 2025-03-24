@@ -46,7 +46,7 @@ Beacon: X
 Cancel: Z
 Select idle worker: BMB + 3
 Cycle through Town Halls: FMB + C
-Go to last alert: FMB + Q
+Go to last alert: FMB + V
 Open ally menu / send resources (for resource trading): Y
 Pause/unpause game: 6
 Learn ability on hero: Middle mouse button
