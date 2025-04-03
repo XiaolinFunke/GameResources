@@ -3,3 +3,4 @@
 3. When you've selected to build a building with a worker, you can "Cancel", but as far as I know there is no way to change the key of that particular "Cancel". All other cancels seem to work, so not a huge deal, since you can just right click instead
 4. Could update tooltips for hotkeys that are macro mode modifier + a key, but Reforged changed how the tooltips work, so I don't appear to be able to change them
 5. Gargoyle 'prioritize' doesn't appear in the correct spot on the command card for some reason
+6. Having a normal 'Alt-tab' would be nice instead of using windows key + tab, but I was never able to get it to work without it causing other issues, such as toggling health bars whenever you hold alt (which is the normal WC3 function of Alt)
