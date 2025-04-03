@@ -99,7 +99,9 @@ setCameraHotkeys()
 Suspend, Permit
 Send, {Blind}{Enter}
 if (InChatRoomOn == True)
+{
   return
+}
 Suspend
 if (A_IsSuspended == 1)
 {
@@ -350,9 +352,27 @@ return
 ;;;;;; Make mouse wheel down and up act as the same useable key
 ;;;;;; Using this for 'Stop' for faking abilities like coil, dagger
 ;;;;;; and for spamming stop on a tower to stop it from taking XP
+;;;;;; Disable when in resource menu, so you can use scroll wheel to give money quickly as normal
 MouseWheelScrollUpHandler:
+if (InResourceMenu == True)
+{
+	Send, {%MouseWheelScrollUp%}
+}
+else
+{
+	Send, m
+}
+return
+
 MouseWheelScrollDownHandler:
-Send, m
+if (InResourceMenu == True)
+{
+	Send, {%MouseWheelScrollDown%}
+}
+else
+{
+	Send, m
+}
 return
 
 ;;;;;; Make 'X' work as Alt for beaconing purposes only
