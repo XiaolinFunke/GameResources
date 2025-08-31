@@ -9,7 +9,7 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 
 ;;;;; Hotkeys ;;;;;
 ;Only active when dota 2 window is active
-#ifWinActive, Dota 2
+#If WinActive("ahk_exe Dota2.exe")
 
 ;;;;; Variables ;;;;;
 ;If False, hotkeys will be disabled
@@ -87,10 +87,6 @@ return
 ;;;;;; Make 4 send shift. This is useful for queueing attack move commands, such as when making summons go push out a lane
 *4::Shift
 
-;;;;;; Alias windows key to Alt
-;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Alt
-LWin::LAlt
-
 ;;;;;; Make shift function as ctrl for control group setting only
 +Space::Send, ^{Space}
 +c::Send, ^c
@@ -126,3 +122,12 @@ return
 !LButton::
 Send ^{LButton}
 return
+
+;Replace If WinActive condition with If WinExist condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
+;Require WC3 or W3Champs to just be open instead
+#If WinExist("ahk_exe Dota2.exe") 
+;;;;;; Alias windows key to Alt
+;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Alt
+LWin::LAlt
+#If WinActive("ahk_exe Dota2.exe") ;Re-instate if WinActive condition -- necessary since a lot of the hotkeys are done with handlers that still need to fire conditionally
+
