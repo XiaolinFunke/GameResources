@@ -272,7 +272,7 @@ Hotkey=Q
 Tip=Hold Position (|cffffcc00Q|r)
 
 [cmdpatrol]
-Hotkey=H
+Hotkey=B
 Tip=Patrol (|cffffcc00H|r)
 
 [cmdselectskill]
@@ -3383,14 +3383,3 @@ Tip=Forked Lightning (|cffffcc00A|r)
 
 [acbh]
 Buttonpos=0,2
-
-// Transport ship hotkeys
-[slo3]
-Hotkey=W
-Tip=Load (|cffffcc00W|r)
-Buttonpos=1,2
-
-[sdro]
-Hotkey=S
-Tip=Unload All (|cffffcc00S|r)
-Buttonpos=2,2
