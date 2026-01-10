@@ -34,12 +34,13 @@ I usually store items roughly like this:
 
 
 Basic hotkeys:
+Quick-attack (don't have to hit left-click): DPI button
 Atk: Caps lock
 Patrol: H
 Move: V
 Hold position: Q
-Stop: Mouse wheel down and up (for spamming)
-Tab between unit/building types: Tab OR Mouse DPI button
+Stop: Mouse wheel up (for spamming)
+Tab between unit/building types: Tab OR Middle Mouse Button
 '3' Also sends shift, useful for shift + attack or shift + patrol
 Uproot / reroot, Hide/Shadowmeld: C
 Beacon: X
@@ -49,7 +50,8 @@ Cycle through Town Halls: FMB + C
 Go to last alert: FMB + V
 Open ally menu / send resources (for resource trading): Y
 Pause/unpause game: 6
-Learn ability on hero: Middle mouse button
+Learn ability on hero: Mouse wheel down
+Camera Grip: Shift/Alt/Ctrl + Middle Mouse Button
 
 Subgroup Order Modifier Key, or select all units of one type, or add to control group:
 Alt or Ctrl (they act identically)

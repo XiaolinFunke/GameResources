@@ -78,10 +78,11 @@ InResourceMenu := False
 ;HotKey command is used in these cases rather than more conventional remapping techniques, since we need the triggering key to be a variable
 ;Most of these HotKey commands have been placed into functions so that they can exist in a spot in the script where they make sense
 ;rather than needing to be placed up top. They will instead be called up here through the use of those functions
-HotKey, %DPIMouseButtonKey%, DPIMouseButtonHandler
+HotKey, *%DPIMouseButtonKey%, DPIMouseButtonHandler
+;No asterisk for MouseWheelClick, so Alt/Ctrl/Shift + Mouse Wheel Click will be camera grip as normal
 HotKey, %MouseWheelClick%, MouseWheelClickHandler
-HotKey, %MouseWheelScrollUp%, MouseWheelScrollUpHandler
-HotKey, %MouseWheelScrollDown%, MouseWheelScrollDownHandler
+HotKey, *%MouseWheelScrollUp%, MouseWheelScrollUpHandler
+HotKey, *%MouseWheelScrollDown%, MouseWheelScrollDownHandler
 setMacroCtrlGroupHotkeys()
 setMacroModeRemappings()
 setInventoryHotkeys()
@@ -291,7 +292,7 @@ Send, {Backspace}
 return
 GoToLastAlertHandler:
 Send, {Space}
-
+return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; MACRO MODE MODIFIER KEY ;;;;;;;
@@ -336,20 +337,21 @@ return
 ;;;;;; Make 3 send shift. This is useful for shift queueing attack/move/patrol commands
 *3::Shift
 
-;;;;;; Make DPI mouse button function as Tab for cycling through units / buildings
+;;;;;; Make DPI mouse button function as a quick-cast attack 
 DPIMouseButtonHandler:
-Send {Tab}
+Send l
+Send {LButton}
 return
 
-;;;;;; Make pushing in the mouse wheel (mouse wheel 'click') send K, so it is a useable key
+;;;;;; Make pushing in the mouse wheel send tab
 MouseWheelClickHandler:
-Send, k
+Send {Tab}
 return
 
 ;;;;;; Make Caps lock a usable key (without toggling your upper/lower case)
 *Capslock::l
 
-;;;;;; Make mouse wheel down and up act as the same useable key
+;;;;;; Make mouse wheel up act as a useable key
 ;;;;;; Using this for 'Stop' for faking abilities like coil, dagger
 ;;;;;; and for spamming stop on a tower to stop it from taking XP
 ;;;;;; Disable when in resource menu, so you can use scroll wheel to give money quickly as normal
@@ -364,6 +366,8 @@ else
 }
 return
 
+;;;;;; Mouse wheel down will be used to level up abilities
+;;;;;; Disable when in resource menu, so you can use scroll wheel to give money quickly as normal
 MouseWheelScrollDownHandler:
 if (InResourceMenu == True)
 {
@@ -371,7 +375,7 @@ if (InResourceMenu == True)
 }
 else
 {
-	Send, m
+	Send, k
 }
 return
 
