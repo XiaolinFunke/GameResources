@@ -3008,6 +3008,10 @@ Tip=Purchase Ivory Tower (|cffffcc00O|r)
 Hotkey=Z
 Tip=Purchase Orb of Fire (|cffffcc00Z|r)
 
+[oslo]
+Hotkey=Z
+Tip=Purchase Orb of Slow (|cffffcc00Z|r)
+
 [ssan]
 Tip=Purchase Staff of Sanctuary (|cffffcc00N|r)
 
