@@ -10,7 +10,17 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 regread, war, HKEY_CURRENT_USER, Software\Blizzard Entertainment\Warcraft III, ProgramX
 menu, tray, Icon, %War%, 1, 1 
 
-#if WinActive("ahk_exe Warcraft III.exe") || WinActive("ahk_exe W3Champions.exe") ;Only run when wc3 window is active or w3Champions window is active
+;;;;; Prevent both scripts from running at the same time
+CustomGameKeysScriptPath := A_ScriptDir "\custom_game_keys_2026.ahk"	
+			
+; Detect hidden windows so we can grab the .ahk running in the background
+DetectHiddenWindows, On
+; Add ahk_class Autohotkey so it won't also close the file open in an editor like notepad++
+if WinExist(CustomGameKeysScriptPath " ahk_class AutoHotkey")
+	WinClose
+
+;;;;; Only run when wc3 window is active or w3Champions window is active
+#if WinActive("ahk_exe Warcraft III.exe") || WinActive("ahk_exe W3Champions.exe") 
 
 ;;;;; Configurable Variables ;;;;;
 ;;; Due to Logitech GHub, some of my mouse buttons send non-standard keys when pressed 
@@ -69,7 +79,7 @@ MouseWheelScrollDown := "WheelDown"
 ;;;;;;; BEGIN MAIN SECTION OF SCRIPT ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;; Other Variables ;;;;;
+;;;;; Meta Variables ;;;;;
 InChatRoomOn := False
 InResourceMenu := False
 
