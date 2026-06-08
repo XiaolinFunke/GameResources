@@ -50,38 +50,81 @@ MouseWheelScrollDown := "WheelDown"
 ;;;;;;; BEGIN MAIN SECTION OF SCRIPT ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;;;; Meta Variables ;;;;;
+InChatRoomOn := False
+
 ;;;;; HotKey commands ;;;;;
 ;HotKey commands must be placed at the top of the script (in the script's auto-execute section)
 ;HotKey command is used in these cases rather than more conventional remapping techniques, since we need the triggering key to be a variable
 ;Most of these HotKey commands have been placed into functions so that they can exist in a spot in the script where they make sense
 ;rather than needing to be placed up top. They will instead be called up here through the use of those functions
+HotKey, *%DPIMouseButtonKey%, DPIMouseButtonHandler
 ;No asterisk for MouseWheelClick, so Alt/Ctrl/Shift + Mouse Wheel Click will be camera grip as normal
 HotKey, %MouseWheelClick%, MouseWheelClickHandler
+HotKey, *%MouseWheelScrollUp%, MouseWheelScrollUpHandler
+HotKey, *%MouseWheelScrollDown%, MouseWheelScrollDownHandler
+HotKey, %BackMouseButtonKey% & Z, MacroZHandler
 setInventoryHotkeys()
 setCameraHotkeys()
 
 ;;;;;;; END AUTO-EXECUTE SECTION OF SCRIPT ;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;; META HOTKEYS (SOUND) ;;;;;;;
+;;;;;;; META HOTKEYS (DISABLING SCRIPT) ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;; No need to disable/enable hotkeys like the regular script, but having some indicator the script is running is still good
-;;;;; Make the sound slightly different from the normal script so we can tell which one it is
+;;; Unlike the normal script, we don't actually care about disabling the scir0pt on enter, since none of the keys should overlap with the normal
+;;; typing keys
+;;;;; Enable/disable all hotkeys ;;;;;
 *Pause::
-SoundPlay,*-1
-Sleep 150
-SoundPlay,*-1
-Sleep 150
-SoundPlay,*-1
+Suspend, Permit
+if (InChatRoomOn == False)
+{
+  ;;;;; Make the sound slightly different from the normal script so we can tell which script is on
+  Suspend, On
+  InChatRoomOn := True
+  InResourceMenu := False
+  SoundPlay,*16
+  Sleep 150
+  SoundPlay,*16
+  Sleep 150
+  SoundPlay,*16
+}
+else
+{
+  ;;;;; Make the sound slightly different from the normal script so we can tell which script is on
+  Suspend, Off
+  InChatRoomOn := False
+  SoundPlay,*-1
+  Sleep 150
+  SoundPlay,*-1
+  Sleep 150
+  SoundPlay,*-1
+}
 return
 
 *Home::
-SoundPlay,*-1
-Sleep 150
-SoundPlay,*-1
-Sleep 150
-SoundPlay,*-1
+Suspend, Permit
+if (InChatRoomOn == False)
+{
+  Suspend, On
+  InChatRoomOn := True
+  InResourceMenu := False
+  SoundPlay,*16
+  Sleep 150
+  SoundPlay,*16
+	
+}
+else
+{
+  Suspend, Off
+  InChatRoomOn := False
+  SoundPlay,*-1
+  Sleep 150
+  SoundPlay,*-1
+  Sleep 150
+  SoundPlay,*-1
+}
 return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -143,12 +186,11 @@ GoToLastAlertHandler:
 Send, {Space}
 return
 
-;;;;;; Make BMB + 3 send ` for selecting idle worker
-;Note that backtick must be escaped with another backtick to register properly with Autohtokey
-Macro3Handler:
-Send, "``"
+;;;;;; Make BMB + Z send {Escape} for cancelling things
+;In the normal keys, this is just Z, but we don't want to overlap with any keys that may be on Z
+MacroZHandler:
+Send, {Esc}
 return
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; SIMPLE REBINDS TO GET AROUND HARD-CODED / UNBINDABLE KEYS ;;;;;;;
@@ -159,18 +201,22 @@ MouseWheelClickHandler:
 Send {Tab}
 return
 
-;;;;;; Alias windows key and Alt to ctrl
-;;;;;; This allows for the use of Alt for subgroup order modifier key and Ctrl-clicking to select all of a unit type, but also 
-;;;;;; ensures that holding alt to use those functions won't toggle the health bars
-;;;;;; Recall that Ctrl and shift have swapped roles for hotkey setting / adding, so Alt will now be functioning to ADD to a hotkey, but also
-;;;;;; for the subgroup order modifier key and ctrl-clicking
-;;;;;; (which is why we don't just do Alt -> Shift directly, since subgroup order modifier key and ctrl-clicking are hardcoded to Ctrl)
-;;;;;;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Ctrl
-LAlt::LCtrl
+;;;;;; Make Caps lock send 'A' for Attack in classic keys
+*Capslock::a
 
-;Replace If WinActive condition with If WinExist condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
-;Require WC3 or W3Champs to just be open instead
-#If WinExist("ahk_exe Warcraft III.exe") || WinExist("ahk_exe W3Champions.exe")  
-;;;;;;Windows key functions as Alt -- needed for Alt-Tabbing
-LWin::LAlt
-#If WinActive("ahk_exe Warcraft III.exe") || WinActive("ahk_exe W3Champions.exe") ;Re-instate if WinActive condition -- necessary since a lot of the hotkeys are done with handlers that still need to fire conditionally
+;;;;;; Make DPI mouse button function as a quick-cast attack 
+DPIMouseButtonHandler:
+Send a
+Send {LButton}
+return
+
+;;;;;; Make mouse wheel up act as 'S' for 'Stop' in classic keys
+MouseWheelScrollUpHandler:
+Send, s
+return
+
+;;;;;; Mouse wheel down will be used to level up abilities
+;;;;;; This is 'O' in classic keys
+MouseWheelScrollDownHandler:
+Send, o
+return
