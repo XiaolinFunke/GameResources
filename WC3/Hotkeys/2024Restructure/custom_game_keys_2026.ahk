@@ -64,6 +64,7 @@ HotKey, %MouseWheelClick%, MouseWheelClickHandler
 HotKey, *%MouseWheelScrollUp%, MouseWheelScrollUpHandler
 HotKey, *%MouseWheelScrollDown%, MouseWheelScrollDownHandler
 HotKey, %BackMouseButtonKey% & Z, MacroZHandler
+HotKey, %BackMouseButtonKey% & X, MacroXHandler
 setInventoryHotkeys()
 setCameraHotkeys()
 
@@ -72,6 +73,26 @@ setCameraHotkeys()
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; META HOTKEYS (DISABLING SCRIPT) ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;; Enable/disable all hotkeys ;;;;;
+;; For some reason the *~ commands do not work with warcraft
+*Enter::
+Suspend, Permit
+Send, {Blind}{Enter}
+if (InChatRoomOn == True)
+{
+  return
+}
+Suspend
+if (A_IsSuspended == 1)
+{
+  SoundPlay,*16
+  Sleep 150
+  SoundPlay,*16
+}
+else
+  SoundPlay,*-1
+return
 
 ;;; Unlike the normal script, we don't actually care about disabling the scir0pt on enter, since none of the keys should overlap with the normal
 ;;; typing keys
@@ -192,6 +213,12 @@ MacroZHandler:
 Send, {Esc}
 return
 
+;;;;;; Make BMB + X act as beacon
+;In the normal keys, this is just X, but we don't want to overlap with any keys that may be on X
+MacroXHandler:
+Send, !{LButton}
+return
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; SIMPLE REBINDS TO GET AROUND HARD-CODED / UNBINDABLE KEYS ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -220,3 +247,16 @@ return
 MouseWheelScrollDownHandler:
 Send, o
 return
+
+;;;;;; Alias windows key and Alt to ctrl
+;;;;;; This allows for the use of Alt for subgroup order modifier key and Ctrl-clicking to select all of a unit type, but also 
+;;;;;; ensures that holding alt to use those functions won't toggle the health bars
+;;;;;;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Ctrl
+LAlt::LCtrl
+
+;Replace If WinActive condition with If WinExist condition, so this hotkey works even when alt-tabbing (the WC3 window will stop being active when alt-tabbing)
+;Require WC3 or W3Champs to just be open instead
+#If WinExist("ahk_exe Warcraft III.exe") || WinExist("ahk_exe W3Champions.exe")  
+;;;;;;Windows key functions as Alt -- needed for Alt-Tabbing
+LWin::LAlt
+#If WinActive("ahk_exe Warcraft III.exe") || WinActive("ahk_exe W3Champions.exe") ;Re-instate if WinActive condition -- necessary since a lot of the hotkeys are done with handlers that still need to fire conditionally
