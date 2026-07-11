@@ -63,8 +63,7 @@ HotKey, *%DPIMouseButtonKey%, DPIMouseButtonHandler
 HotKey, %MouseWheelClick%, MouseWheelClickHandler
 HotKey, *%MouseWheelScrollUp%, MouseWheelScrollUpHandler
 HotKey, *%MouseWheelScrollDown%, MouseWheelScrollDownHandler
-HotKey, %BackMouseButtonKey% & Z, MacroZHandler
-HotKey, %BackMouseButtonKey% & X, MacroXHandler
+HotKey, %FrontMouseButtonKey% & X, MicroXHandler
 setInventoryHotkeys()
 setCameraHotkeys()
 
@@ -207,15 +206,9 @@ GoToLastAlertHandler:
 Send, {Space}
 return
 
-;;;;;; Make BMB + Z send {Escape} for cancelling things
-;In the normal keys, this is just Z, but we don't want to overlap with any keys that may be on Z
-MacroZHandler:
-Send, {Esc}
-return
-
-;;;;;; Make BMB + X act as beacon
+;;;;;; Make FMB + X act as beacon
 ;In the normal keys, this is just X, but we don't want to overlap with any keys that may be on X
-MacroXHandler:
+MicroXHandler:
 Send, !{LButton}
 return
 
@@ -237,9 +230,10 @@ Send a
 Send {LButton}
 return
 
-;;;;;; Make mouse wheel up act as 'S' for 'Stop' in classic keys
+;;;;;; Make mouse wheel up act as Escape for Cancel in classic keys
+;;;;;; In the normal keys this would be 'Stop', but that doesn't really seem necessary for custom games
 MouseWheelScrollUpHandler:
-Send, s
+Send, {Esc}
 return
 
 ;;;;;; Mouse wheel down will be used to level up abilities
