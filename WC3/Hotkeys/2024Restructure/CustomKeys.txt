@@ -1041,6 +1041,34 @@ Researchbuttonpos=1,0
 Tip=Charm (|cffffcc00W|r)
 Researchtip=Learn Charm (|cffffcc00W|r)
 
+// Cleansing Fire
+[AHcl]
+Hotkey=A
+Researchhotkey=A
+Buttonpos=0,2
+Researchbuttonpos=0,0
+
+// Consecration
+[AHcr]
+Hotkey=D
+Researchhotkey=D
+Buttonpos=3,2
+Researchbuttonpos=3,0
+
+// Righteous Fury
+[ANcp]
+Hotkey=S
+Researchhotkey=S
+Buttonpos=2,2
+Researchbuttonpos=2,0
+
+// Sacred Aura
+[AHpa]
+Researchhotkey=W
+Buttonpos=1,2
+Researchbuttonpos=1,0
+
+
 [anbf]
 Hotkey=D
 Researchhotkey=D
