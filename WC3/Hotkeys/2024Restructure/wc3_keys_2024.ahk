@@ -394,7 +394,7 @@ X & LButton::
 Send !{LButton}
 return
 
-;;;;;; Alias windows key and Alt to ctrl
+;;;;;; Alias Alt to ctrl
 ;;;;;; This allows for the use of Alt for subgroup order modifier key and Ctrl-clicking to select all of a unit type, but also 
 ;;;;;; ensures that holding alt to use those functions won't toggle the health bars
 ;;;;;; Recall that Ctrl and shift have swapped roles for hotkey setting / adding, so Alt will now be functioning to ADD to a hotkey, but also

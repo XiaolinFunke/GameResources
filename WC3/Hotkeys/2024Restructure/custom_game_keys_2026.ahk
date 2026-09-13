@@ -187,6 +187,41 @@ return
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;; CTRL GROUP HOTKEYS ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; Control groups - ensure setting them works with shift and adding with Alt
+;;;; * is necessary here to preserve modifiers (whereas that happens automatically with the Key & Key combinations used in the macro ctrl groups)
+*1::sendKeyWithRemappedModifier("1")
+*2::sendKeyWithRemappedModifier("2")
+*3::sendKeyWithRemappedModifier("3")
+*4::sendKeyWithRemappedModifier("4")
+*5::sendKeyWithRemappedModifier("5")
+*6::sendKeyWithRemappedModifier("6")
+*7::sendKeyWithRemappedModifier("7")
+*8::sendKeyWithRemappedModifier("8")
+*9::sendKeyWithRemappedModifier("9")
+*0::sendKeyWithRemappedModifier("0")
+
+;;;; Since some control group hotkeys are already triggered using 2 keys in combination (not in these keys, but in the normal ones...), and 3 key combinations are not supported by autohotkey,
+;;;; use this function to have shift function as Ctrl for setting control groups and Ctrl (and Alt, since it's aliased to Ctrl) function as shift for Ctrl group adding
+sendKeyWithRemappedModifier(keyToSend)
+{
+  if (GetKeyState("Shift")) or (GetKeyState("Shift"), "P") {
+    ;;;; Don't need to release shift, since, in WC3, Shift + Ctrl + hotkey SETS the control group rather than adding to it (unlike in dota2)
+    Send ^%keyToSend%
+  }
+  else if (GetKeyState("Ctrl")) or (GetKeyState("Ctrl"), "P") {
+    Send +%keyToSend%
+  }
+  else
+  {
+    Send, {Blind}%keyToSend%
+  }
+}
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;; CAMERA HOTKEYS ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -242,7 +277,7 @@ MouseWheelScrollDownHandler:
 Send, o
 return
 
-;;;;;; Alias windows key and Alt to ctrl
+;;;;;; Alias Alt to ctrl
 ;;;;;; This allows for the use of Alt for subgroup order modifier key and Ctrl-clicking to select all of a unit type, but also 
 ;;;;;; ensures that holding alt to use those functions won't toggle the health bars
 ;;;;;;Use remap syntax instead of Send so that it will trigger hotkeys that normally trigger with Ctrl
