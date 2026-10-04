@@ -1041,6 +1041,14 @@ Researchbuttonpos=1,0
 Tip=Charm (|cffffcc00W|r)
 Researchtip=Learn Charm (|cffffcc00W|r)
 
+// Forsaken Paladin
+[Npal]
+Awakentip=(|cffffcc00A|r) Awaken Forsaken Paladin
+Buttonpos=0,1
+Hotkey=A
+Revivetip=(|cffffcc00A|r) Revive Forsaken Paladin
+Tip=(|cffffcc00A|r) Summon Forsaken Paladin
+
 // Cleansing Fire
 [AHcl]
 Hotkey=A
