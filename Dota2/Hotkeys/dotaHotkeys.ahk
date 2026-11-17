@@ -15,6 +15,9 @@ SetKeyDelay , -1, -1		;faster response (might be better with -1, 0)
 ;If False, hotkeys will be disabled
 global HotkeysEnabled := True
 
+;;;;; Hotkeys ;;;;;
+HotKey, MButton, MouseWheelClickHandler
+
 ;;;;;;Function to toggle whether the hotkeys are disabled or not
 ToggleHotkeysEnabled()
 {
@@ -80,6 +83,13 @@ return
 *!c::8
 *!w::9
 *!3::-
+*!Capslock::'
+
+;;;;;; Make pushing in mouse wheel send a key
+;;;;;; Use Handler instead of remap syntax, so pressing a modifier key while doing it will do camera grip instead (like in my WC3 hotkeys)
+MouseWheelClickHandler:
+Send /
+return
 
 ;;;;;; Make Caps lock a usable key (without toggling your upper/lower case)
 *Capslock::m
